@@ -1,12 +1,41 @@
 {
-  "greeting": "Bienvenue dans mon portfolio !",
-  "introduction": "Ici, vous trouverez mes projets et compétences.",
-  "about": "À propos de moi",
   "HeaderTitle": "Mon portfolio",
   "HeaderHome": "Accueil",
   "HeaderAbout": "À propos",
   "HeaderProjects": "Projets",
   "HeaderContact": "Contact",
   "FooterRights": "2025 Mon Portfolio. Tous droits réservés.",
-  "FooterThanks": "Réalisé avec 💙 en utilisant Next.js et TailwindCSS."
+  "FooterThanks": "Fait avec 💙 en utilisant Next.js et TailwindCSS.",
+
+  "AboutTitle": "À propos de moi",
+  "AboutDescription": "Bonjour ! Je suis Emanuel Brito, développeur front-end spécialisé dans la création d'interfaces modernes et accessibles. Je travaille actuellement à l'IBGE en tant que support technique et j'améliore les processus numériques. Je suis diplômé de l'IFPI et toujours motivé à apprendre de nouvelles technologies et bonnes pratiques.",
+
+  "SkillsTitle": "Compétences",
+  "SkillsLanguages": "Langages : JavaScript, TypeScript, HTML, CSS",
+  "SkillsFrameworks": "Frameworks : React, Tailwind CSS",
+  "SkillsTools": "Outils : Git, VS Code, Figma",
+  "SkillsExtras": "Extras : Réactivité, Accessibilité, UI/UX",
+
+  "ExperienceTitle": "Expérience",
+  "ExperienceIBGE": "IBGE – Institut Brésilien de Géographie et de Statistique",
+  "ExperienceRole": "Technicien support informatique",
+  "ExperienceDetails1": "Assistance technique aux utilisateurs de l'institution.",
+  "ExperienceDetails2": "Maintenance des systèmes et des équipements.",
+  "ExperienceDetails3": "Participation à l'amélioration des processus numériques internes.",
+
+  "EducationTitle": "Formation",
+  "EducationIFPI": "Institut Fédéral du Piauí (IFPI)",
+  "EducationCourse": "Licence en Analyse et Développement de Systèmes",
+  "EducationYears": "2022 – 2025",
+
+  "ProjectsTitle": "Projets",
+  "ProjectsExampleTitle": "Nom du Projet",
+  "ProjectsExampleDescription": "Brève description de ce qu’il fait.",
+  "ProjectsExampleLink": "Voir sur GitHub",
+
+  "ContactTitle": "Contact",
+  "ContactDescription": "Discutons-en ! Envoyez-moi un message ou ajoutez-moi sur LinkedIn.",
+  "ContactEmail": "Email : ",
+  "ContactLinkedIn": "LinkedIn : ",
+  "ContactGitHub": "GitHub : "
 }

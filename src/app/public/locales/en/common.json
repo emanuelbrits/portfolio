@@ -1,12 +1,41 @@
 {
-  "greeting": "Welcome to my portfolio!",
-  "introduction": "Here you can find my projects and skills.",
-  "about": "About Me",
   "HeaderTitle": "My portfolio",
   "HeaderHome": "Home",
   "HeaderAbout": "About",
   "HeaderProjects": "Projects",
   "HeaderContact": "Contact",
   "FooterRights": "2025 My Portfolio. All rights reserved.",
-  "FooterThanks": "Made with 💙 using Next.js and TailwindCSS."
+  "FooterThanks": "Made with 💙 using Next.js and TailwindCSS.",
+
+  "AboutTitle": "About Me",
+  "AboutDescription": "Hi! I'm Emanuel Brito, a front-end developer focused on creating modern and accessible interfaces. I currently work at IBGE providing technical support and improving digital processes, and I hold a degree from IFPI. I'm always looking to grow with new technologies and best development practices.",
+
+  "SkillsTitle": "Skills",
+  "SkillsLanguages": "Languages: JavaScript, TypeScript, HTML, CSS",
+  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsTools": "Tools: Git, VS Code, Figma",
+  "SkillsExtras": "Extras: Responsiveness, Accessibility, UI/UX",
+
+  "ExperienceTitle": "Experience",
+  "ExperienceIBGE": "IBGE – Brazilian Institute of Geography and Statistics",
+  "ExperienceRole": "IT Support Staff",
+  "ExperienceDetails1": "Technical support for institution users.",
+  "ExperienceDetails2": "Maintenance of systems and equipment.",
+  "ExperienceDetails3": "Collaboration on internal digital process improvements.",
+
+  "EducationTitle": "Education",
+  "EducationIFPI": "Federal Institute of Piauí (IFPI)",
+  "EducationCourse": "Bachelor's degree in Systems Analysis and Development",
+  "EducationYears": "2022 – 2025",
+
+  "ProjectsTitle": "Projects",
+  "ProjectsExampleTitle": "Project Name",
+  "ProjectsExampleDescription": "Brief description of what it does.",
+  "ProjectsExampleLink": "View on GitHub",
+
+  "ContactTitle": "Contact",
+  "ContactDescription": "Let's talk! Send me a message or connect on LinkedIn.",
+  "ContactEmail": "Email: ",
+  "ContactLinkedIn": "LinkedIn: ",
+  "ContactGitHub": "GitHub: "
 }

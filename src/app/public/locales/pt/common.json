@@ -1,12 +1,41 @@
 {
-  "greeting": "Bem-vindo ao meu portfólio!",
-  "introduction": "Aqui você encontra meus projetos e habilidades.",
-  "about": "Sobre Mim",
   "HeaderTitle": "Meu portfólio",
   "HeaderHome": "Início",
   "HeaderAbout": "Sobre",
   "HeaderProjects": "Projetos",
   "HeaderContact": "Contato",
   "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",
-  "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS."
+  "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS.",
+
+  "AboutTitle": "Sobre Mim",
+  "AboutDescription": "Olá! Sou Emanuel Brito, desenvolvedor front-end focado em criar interfaces modernas e acessíveis. Trabalho atualmente no IBGE com suporte técnico e melhoria de processos digitais, e sou formado pelo IFPI. Busco sempre evoluir com novas tecnologias e boas práticas de desenvolvimento.",
+
+  "SkillsTitle": "Habilidades",
+  "SkillsLanguages": "Linguagens: JavaScript, TypeScript, HTML, CSS",
+  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsTools": "Ferramentas: Git, VS Code, Figma",
+  "SkillsExtras": "Extras: Responsividade, Acessibilidade, UI/UX",
+
+  "ExperienceTitle": "Experiência",
+  "ExperienceIBGE": "IBGE – Instituto Brasileiro de Geografia e Estatística",
+  "ExperienceRole": "Funcionário de Suporte de TI",
+  "ExperienceDetails1": "Atendimento técnico aos usuários da instituição.",
+  "ExperienceDetails2": "Manutenção de sistemas e equipamentos.",
+  "ExperienceDetails3": "Colaboração em melhorias de processos digitais internos.",
+
+  "EducationTitle": "Formação",
+  "EducationIFPI": "Instituto Federal do Piauí (IFPI)",
+  "EducationCourse": "Curso superior em Análise e Desenvolvimento de Sistemas",
+  "EducationYears": "2022 – 2025",
+
+  "ProjectsTitle": "Projetos",
+  "ProjectsExampleTitle": "Nome do Projeto",
+  "ProjectsExampleDescription": "Breve descrição do que ele faz.",
+  "ProjectsExampleLink": "Ver no GitHub",
+
+  "ContactTitle": "Contato",
+  "ContactDescription": "Vamos conversar! Me mande uma mensagem ou me adicione no LinkedIn.",
+  "ContactEmail": "Email: ",
+  "ContactLinkedIn": "LinkedIn: ",
+  "ContactGitHub": "GitHub: "
 }

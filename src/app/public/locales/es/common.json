@@ -1,12 +1,41 @@
 {
-  "greeting": "¡Bienvenido a mi portafolio!",
-  "introduction": "Aquí puedes encontrar mis proyectos y habilidades.",
-  "about": "Sobre Mí",
   "HeaderTitle": "Mi portafolio",
   "HeaderHome": "Inicio",
-  "HeaderAbout": "Sobre",
+  "HeaderAbout": "Acerca de",
   "HeaderProjects": "Proyectos",
   "HeaderContact": "Contacto",
   "FooterRights": "2025 Mi Portafolio. Todos los derechos reservados.",
-  "FooterThanks": "Hecho con 💙 usando Next.js y TailwindCSS."
+  "FooterThanks": "Hecho con 💙 usando Next.js y TailwindCSS.",
+
+  "AboutTitle": "Sobre Mí",
+  "AboutDescription": "¡Hola! Soy Emanuel Brito, desarrollador front-end enfocado en crear interfaces modernas y accesibles. Actualmente trabajo en el IBGE brindando soporte técnico y mejorando procesos digitales, y me gradué en el IFPI. Siempre busco crecer con nuevas tecnologías y buenas prácticas de desarrollo.",
+
+  "SkillsTitle": "Habilidades",
+  "SkillsLanguages": "Lenguajes: JavaScript, TypeScript, HTML, CSS",
+  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsTools": "Herramientas: Git, VS Code, Figma",
+  "SkillsExtras": "Extras: Responsividad, Accesibilidad, UI/UX",
+
+  "ExperienceTitle": "Experiencia",
+  "ExperienceIBGE": "IBGE – Instituto Brasileño de Geografía y Estadística",
+  "ExperienceRole": "Soporte Técnico en TI",
+  "ExperienceDetails1": "Atención técnica a los usuarios de la institución.",
+  "ExperienceDetails2": "Mantenimiento de sistemas y equipos.",
+  "ExperienceDetails3": "Colaboración en mejoras de procesos digitales internos.",
+
+  "EducationTitle": "Educación",
+  "EducationIFPI": "Instituto Federal de Piauí (IFPI)",
+  "EducationCourse": "Licenciatura en Análisis y Desarrollo de Sistemas",
+  "EducationYears": "2022 – 2025",
+
+  "ProjectsTitle": "Proyectos",
+  "ProjectsExampleTitle": "Nombre del Proyecto",
+  "ProjectsExampleDescription": "Breve descripción de lo que hace.",
+  "ProjectsExampleLink": "Ver en GitHub",
+
+  "ContactTitle": "Contacto",
+  "ContactDescription": "¡Hablemos! Envíame un mensaje o agrégame en LinkedIn.",
+  "ContactEmail": "Email: ",
+  "ContactLinkedIn": "LinkedIn: ",
+  "ContactGitHub": "GitHub: "
 }
