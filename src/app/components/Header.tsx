@@ -1,37 +1,39 @@
 import Link from "next/link";
+type HeaderProps = {
+    lang: string;
+    dictionary: { [key: string]: string };
+};
 
-const Header = () => {
+export default function Header({ lang, dictionary }: HeaderProps) {
     return (
         <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
             <nav className="container mx-auto p-4 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold text-black">
-                    Meu Portfólio
+                    {dictionary.HeaderTitle}
                 </Link>
                 <ul className="flex space-x-6">
                     <li>
                         <Link href="/" className="text-lg text-gray-700 hover:text-black">
-                            Início
+                            {dictionary.HeaderHome}
                         </Link>
                     </li>
                     <li>
                         <Link href="/about" className="text-lg text-gray-700 hover:text-black">
-                            Sobre
+                            {dictionary.HeaderAbout}
                         </Link>
                     </li>
                     <li>
                         <Link href="/projects" className="text-lg text-gray-700 hover:text-black">
-                            Projetos
+                            {dictionary.HeaderProjects}
                         </Link>
                     </li>
                     <li>
                         <Link href="/contact" className="text-lg text-gray-700 hover:text-black">
-                            Contato
+                            {dictionary.HeaderContact}
                         </Link>
                     </li>
                 </ul>
             </nav>
         </header>
     );
-};
-
-export default Header;
+}

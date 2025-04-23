@@ -1,0 +1,12 @@
+{
+  "greeting": "Bem-vindo ao meu portfólio!",
+  "introduction": "Aqui você encontra meus projetos e habilidades.",
+  "about": "Sobre Mim",
+  "HeaderTitle": "Meu portfólio",
+  "HeaderHome": "Início",
+  "HeaderAbout": "Sobre",
+  "HeaderProjects": "Projetos",
+  "HeaderContact": "Contato",
+  "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",
+  "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS."
+}
