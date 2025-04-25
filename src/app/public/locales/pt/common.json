@@ -1,7 +1,9 @@
 {
   "HeaderTitle": "Meu portfólio",
-  "HeaderHome": "Início",
   "HeaderAbout": "Sobre",
+  "HeaderSkills": "Habilidades",
+  "HeaderExperience": "Experiência",
+  "HeaderEducation": "Formação",
   "HeaderProjects": "Projetos",
   "HeaderContact": "Contato",
   "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",

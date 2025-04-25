@@ -1,7 +1,9 @@
 {
   "HeaderTitle": "My portfolio",
-  "HeaderHome": "Home",
   "HeaderAbout": "About",
+  "HeaderSkills": "Skills",
+  "HeaderExperience": "Experience",
+  "HeaderEducation": "Education",
   "HeaderProjects": "Projects",
   "HeaderContact": "Contact",
   "FooterRights": "2025 My Portfolio. All rights reserved.",
