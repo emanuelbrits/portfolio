@@ -14,7 +14,7 @@
 
   "SkillsTitle": "Habilidades",
   "SkillsLanguages": "Lenguajes: JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsFrameworks": "Frameworks: React, Angular, Tailwind CSS",
   "SkillsTools": "Herramientas: Git, VS Code, Figma",
   "SkillsExtras": "Extras: Responsividad, Accesibilidad, UI/UX",
 
@@ -31,9 +31,17 @@
   "EducationYears": "2022 – 2025",
 
   "ProjectsTitle": "Proyectos",
-  "ProjectsExampleTitle": "Nombre del Proyecto",
-  "ProjectsExampleDescription": "Breve descripción de lo que hace.",
-  "ProjectsExampleLink": "Ver en GitHub",
+  
+  "ProjectsExampleTitle1": "Marketplace Control R6",
+  "ProjectsExampleDescription1": "Este sistema es una plataforma para el control de ítems del marketplace de Rainbow Six: Siege. Permite extraer información automáticamente de sitios externos como Stats.cc, almacenar datos en Supabase (como nombre, tipo, arma/operador e imagen de los ítems) y filtrar o listar esos ítems según criterios como tipo (skins, cascos, uniformes) y arma/operador. La interfaz facilita la visualización y gestión de los ítems registrados, siendo útil para quienes desean seguir o organizar su colección o inversiones con precisión.",
+  "ProjectsExampleLink1": "Ver en GitHub",
+  "ProjectLink1": "Enlace del proyecto",
+
+  "ProjectsExampleTitle2": "FixIT",
+  "ProjectsExampleDescription2": "El sistema conecta a los clientes que tienen problemas con dispositivos electrónicos (como teléfonos móviles, tabletas, portátiles y escritorios) con técnicos de informática capacitados. Los clientes pueden registrar publicaciones detallando sus problemas, incluyendo fotos y ubicación. Los técnicos visualizan estas publicaciones filtrando por categoría, ubicación y palabra clave, y pueden ofrecer soporte a través de un chat integrado, promoviendo una comunicación directa y eficiente para la resolución de los problemas.",
+  "ProjectsExampleLink2": "Ver en GitHub",
+  "ProjectLink2": "Enlace del proyecto",
+
 
   "ContactTitle": "Contacto",
   "ContactDescription": "¡Hablemos! Envíame un mensaje o agrégame en LinkedIn.",

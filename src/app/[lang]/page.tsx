@@ -60,12 +60,24 @@ export default async function Home({
       <section id="projects" className="py-16 px-6 bg-white text-gray-800">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">{dict.ProjectsTitle}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
             {/* Exemplo de projeto */}
             <div className="bg-gray-100 p-6 rounded-2xl shadow-md">
-              <h4 className="text-xl font-semibold mb-2">{dict.ProjectsExampleTitle}</h4>
-              <p className="text-sm text-gray-700 mb-4">{dict.ProjectsExampleDescription}</p>
-              <a href="#" target="_blank" className="text-blue-500 hover:underline">{dict.ProjectsExampleLink}</a>
+              <h4 className="text-xl font-semibold mb-2">{dict.ProjectsExampleTitle1}</h4>
+              <p className="text-sm text-gray-700 mb-4">{dict.ProjectsExampleDescription1}</p>
+              <div className='flex flex-row justify-around'>
+                <a href="https://github.com/emanuelbrits/Marketplace_control_R6" target="_blank" className="text-blue-500 hover:underline">{dict.ProjectsExampleLink1}</a>
+                <a href="https://marketplace-control-r6.vercel.app" target="_blank" className="text-blue-500 hover:underline">{dict.ProjectLink1}</a>
+              </div>
+            </div>
+            {/* Exemplo de projeto */}
+            <div className="bg-gray-100 p-6 rounded-2xl shadow-md">
+              <h4 className="text-xl font-semibold mb-2">{dict.ProjectsExampleTitle2}</h4>
+              <p className="text-sm text-gray-700 mb-4">{dict.ProjectsExampleDescription2}</p>
+              <div className='flex flex-row justify-around'>
+                <a href="https://github.com/emanuelbrits/FixIT" target="_blank" className="text-blue-500 hover:underline">{dict.ProjectsExampleLink2}</a>
+                <a href="https://fix-it-seven.vercel.app" target="_blank" className="text-blue-500 hover:underline">{dict.ProjectLink2}</a>
+              </div>
             </div>
           </div>
         </div>

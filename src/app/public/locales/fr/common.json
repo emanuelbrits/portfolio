@@ -14,7 +14,7 @@
 
   "SkillsTitle": "Compétences",
   "SkillsLanguages": "Langages : JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks : React, Tailwind CSS",
+  "SkillsFrameworks": "Frameworks : React, Angular, Tailwind CSS",
   "SkillsTools": "Outils : Git, VS Code, Figma",
   "SkillsExtras": "Extras : Réactivité, Accessibilité, UI/UX",
 
@@ -31,9 +31,17 @@
   "EducationYears": "2022 – 2025",
 
   "ProjectsTitle": "Projets",
-  "ProjectsExampleTitle": "Nom du Projet",
-  "ProjectsExampleDescription": "Brève description de ce qu’il fait.",
-  "ProjectsExampleLink": "Voir sur GitHub",
+  
+  "ProjectsExampleTitle1": "Marketplace Control R6",
+  "ProjectsExampleDescription1": "Ce système est une plateforme de gestion des objets du marketplace de Rainbow Six: Siege. Il permet d'extraire automatiquement des informations de sites externes comme Stats.cc, de stocker les données dans Supabase (comme le nom, le type, l’arme/opérateur et l’image des objets), et de filtrer ou lister ces objets selon des critères tels que le type (skins, casques, uniformes) et l’arme/opérateur. L’interface facilite la visualisation et la gestion des objets enregistrés, ce qui est utile pour ceux qui souhaitent suivre ou organiser leur collection ou leurs investissements avec précision.",
+  "ProjectsExampleLink1": "Voir sur GitHub",
+  "ProjectLink1": "Lien du projet",
+
+  "ProjectsExampleTitle2": "FixIT",
+  "ProjectsExampleDescription2": "Le système connecte les clients ayant des problèmes avec des appareils électroniques (comme des téléphones, tablettes, ordinateurs portables et de bureau) à des techniciens informatiques qualifiés. Les clients peuvent enregistrer des publications détaillant leurs problèmes, y compris des photos et leur localisation. Les techniciens consultent ces publications en filtrant par catégorie, localisation et mots-clés, et peuvent offrir du support via un chat intégré, favorisant une communication directe et efficace pour la résolution des problèmes.",
+  "ProjectsExampleLink2": "Voir sur GitHub",
+  "ProjectLink2": "Lien du projet",
+
 
   "ContactTitle": "Contact",
   "ContactDescription": "Discutons-en ! Envoyez-moi un message ou ajoutez-moi sur LinkedIn.",

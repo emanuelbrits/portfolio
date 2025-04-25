@@ -6,15 +6,16 @@
   "HeaderEducation": "Formação",
   "HeaderProjects": "Projetos",
   "HeaderContact": "Contato",
+  
   "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",
   "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS.",
 
   "AboutTitle": "Sobre Mim",
   "AboutDescription": "Olá! Sou Emanuel Brito, desenvolvedor front-end focado em criar interfaces modernas e acessíveis. Trabalho atualmente no IBGE com suporte técnico e melhoria de processos digitais, e sou formado pelo IFPI. Busco sempre evoluir com novas tecnologias e boas práticas de desenvolvimento.",
-
+ 
   "SkillsTitle": "Habilidades",
   "SkillsLanguages": "Linguagens: JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsFrameworks": "Frameworks: React, Angular, Tailwind CSS",
   "SkillsTools": "Ferramentas: Git, VS Code, Figma",
   "SkillsExtras": "Extras: Responsividade, Acessibilidade, UI/UX",
 
@@ -31,9 +32,16 @@
   "EducationYears": "2022 – 2025",
 
   "ProjectsTitle": "Projetos",
-  "ProjectsExampleTitle": "Nome do Projeto",
-  "ProjectsExampleDescription": "Breve descrição do que ele faz.",
-  "ProjectsExampleLink": "Ver no GitHub",
+  
+  "ProjectsExampleTitle1": "Marketplace Control R6",
+  "ProjectsExampleDescription1": "Este sistema é uma plataforma de controle de itens do marketplace do Rainbow Six: Siege. Ele permite extrair informações automaticamente de sites externos como o Stats.cc, armazenar dados no Supabase (como nome, tipo, arma/operador e imagem dos itens) e filtrar ou listar esses itens com base em critérios como tipo (skins, headgears, uniformes) e arma/operador. A interface facilita a visualização e gerenciamento dos itens cadastrados, sendo útil para quem deseja acompanhar ou organizar sua coleção ou investimentos com precisão.",
+  "ProjectsExampleLink1": "Ver no GitHub",
+  "ProjectLink1": "Link do projeto",
+
+  "ProjectsExampleTitle2": "FixIT",
+  "ProjectsExampleDescription2": "O sistema conecta clientes que possuem problemas em dispositivos eletrônicos (como celulares, tablets, notebooks e desktops) com técnicos de informática capacitados. Os clientes podem registrar postagens detalhando seus problemas, incluindo fotos e localização. Técnicos visualizam essas postagens filtrando por categoria, localização e palavra-chave, e podem oferecer suporte por meio de um chat integrado, promovendo uma comunicação direta e eficiente para a resolução dos problemas.",
+  "ProjectsExampleLink2": "Ver no GitHub",
+  "ProjectLink2": "Link do projeto",
 
   "ContactTitle": "Contato",
   "ContactDescription": "Vamos conversar! Me mande uma mensagem ou me adicione no LinkedIn.",

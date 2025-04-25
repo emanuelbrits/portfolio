@@ -14,7 +14,7 @@
 
   "SkillsTitle": "Skills",
   "SkillsLanguages": "Languages: JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks: React, Tailwind CSS",
+  "SkillsFrameworks": "Frameworks: React, Angular, Tailwind CSS",
   "SkillsTools": "Tools: Git, VS Code, Figma",
   "SkillsExtras": "Extras: Responsiveness, Accessibility, UI/UX",
 
@@ -31,9 +31,16 @@
   "EducationYears": "2022 – 2025",
 
   "ProjectsTitle": "Projects",
-  "ProjectsExampleTitle": "Project Name",
-  "ProjectsExampleDescription": "Brief description of what it does.",
-  "ProjectsExampleLink": "View on GitHub",
+  
+  "ProjectsExampleTitle1": "Marketplace Control R6",
+  "ProjectsExampleDescription1": "This system is a platform for managing marketplace items from Rainbow Six: Siege. It allows automatic extraction of information from external websites like Stats.cc, stores data in Supabase (such as item name, type, weapon/operator, and image), and lets users filter or list items based on criteria like type (skins, headgears, uniforms) and weapon/operator. The interface makes it easy to view and manage registered items, making it useful for those who want to track or organize their collection or investments accurately.",
+  "ProjectsExampleLink1": "View on GitHub",
+  "ProjectLink1": "Project link",
+
+  "ProjectsExampleTitle2": "FixIT",
+  "ProjectsExampleDescription2": "The system connects customers with issues in electronic devices (such as smartphones, tablets, laptops, and desktops) to skilled IT technicians. Customers can register posts detailing their problems, including photos and location. Technicians view these posts by filtering by category, location, and keyword, and can offer support via an integrated chat, promoting direct and efficient communication for problem resolution.",
+  "ProjectsExampleLink2": "View on GitHub",
+  "ProjectLink2": "Project link",
 
   "ContactTitle": "Contact",
   "ContactDescription": "Let's talk! Send me a message or connect on LinkedIn.",
