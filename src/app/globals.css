@@ -7,3 +7,41 @@
 html {
     scroll-behavior: smooth;
 }
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1, h2, h3, h4 {
+    font-family: "Anton", sans-serif;
+    /* text-transform: uppercase;
+    text-align: start;
+    font-size: 80px; */
+}
+
+p, a, span {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    /* font-style: italic; */
+}
+
+li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}

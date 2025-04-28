@@ -30,7 +30,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
 
         {/* Botão hambúrguer no mobile */}
         <button
-          className="lg:hidden flex flex-col justify-center items-center w-8 h-8 relative z-20"
+          className="lg:hidden flex flex-col justify-center items-center w-8 h-8 relative z-20 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
