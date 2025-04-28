@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --green: #7BC74D;
+    --black: #222831;
+    --grayt: #393E46;
+    --white: #EEEEEE;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,16 +33,21 @@ html {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Anton", sans-serif;
     /* text-transform: uppercase;
     text-align: start;
     font-size: 80px; */
 }
 
-p, a, span {
+p,
+a,
+span {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     /* font-style: italic; */
