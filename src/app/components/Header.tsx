@@ -18,7 +18,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-11">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Título fixo à esquerda sem quebra */}
         <Link
