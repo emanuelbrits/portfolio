@@ -4,7 +4,16 @@ import { i18n } from './app/lib/i18n-config'; // ou qualquer arquivo que você t
 
 export function middleware(request: Request) {
   const { pathname, searchParams } = new URL(request.url);
-  
+
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/images') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.startsWith('/robots.txt')
+  ) {
+    return NextResponse.next()
+  }
+
   // Se já houver um idioma na URL, não faça mais nada
   if (pathname.startsWith('/en') || pathname.startsWith('/pt') || pathname.startsWith('/es') || pathname.startsWith('/fr')) {
     return NextResponse.next();
