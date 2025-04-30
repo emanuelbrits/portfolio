@@ -1,4 +1,5 @@
 // app/[lang]/page.tsx
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { getDictionary } from '../lib/i18n';
 import Image from 'next/image';
 
@@ -31,14 +32,14 @@ export default async function Home({
               </a>
             </div>
             <div className="relative w-full h-[500px] md:h-[700px]">
-  <Image
-    src="/images/home_image.png"
-    alt="Imagem da home"
-    fill
-    className="object-cover"
-    priority
-  />
-</div>
+              <Image
+                src="/images/home_image.png"
+                alt="Imagem da home"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
 
           </div>
         </div>
@@ -110,9 +111,18 @@ export default async function Home({
           <h2 className="text-4xl font-bold mb-6">{dict.ContactTitle}</h2>
           <p className="text-lg mb-4">{dict.ContactDescription}</p>
           <ul className="space-y-2 text-lg">
-            <li>Email: <a href="mailto:emanuelbrito.acb@gmail.com" className="text-blue-500">emanuelbrito.acb@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/emanuel-brito-545a65236" target='_blank' className="text-blue-500">/emanuel-brito</a></li>
-            <li>GitHub: <a href="https://github.com/emanuelbrits" target='_blank' className="text-blue-500">/emanuelbrits</a></li>
+            <li>
+              <FaEnvelope className="w-5 h-5 text-blue-500 inline mr-2" />
+              <a href="mailto:emanuelbrito.acb@gmail.com" className="text-blue-500">emanuelbrito.acb@gmail.com</a>
+            </li>
+            <li>
+              <FaLinkedin className="w-5 h-5 text-blue-500 inline mr-2" />
+              <a href="https://www.linkedin.com/in/emanuel-brito-545a65236" target='_blank' className="text-blue-500">/emanuel-brito</a>
+            </li>
+            <li>
+              <FaGithub className="w-5 h-5 text-blue-500 inline mr-2" />
+              <a href="https://github.com/emanuelbrits" target='_blank' className="text-blue-500">/emanuelbrits</a>
+            </li>
           </ul>
         </div>
       </section>

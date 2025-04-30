@@ -53,7 +53,7 @@ export default async function RootLayout(props: {
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></link>
 
         {/* Título dinâmico se quiser */}
-        <title>Seu Nome | Desenvolvedor Front-end</title>
+        <title>Emanuel Brito | Desenvolvedor Front-end</title>
       </head>
       <body>
         <Header lang={lang} dictionary={dictionary} />
