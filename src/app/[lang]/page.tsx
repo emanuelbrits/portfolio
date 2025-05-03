@@ -2,6 +2,7 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { getDictionary } from '../lib/i18n';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Home({
   params,
@@ -12,24 +13,36 @@ export default async function Home({
 
   const dict = await getDictionary(lang);
 
+  const languages = [
+    { code: "en", flag: "https://flagpedia.net/data/flags/icon/36x27/us.webp", label: "English" },
+    { code: "pt", flag: "https://flagpedia.net/data/flags/icon/36x27/br.webp", label: "Português" },
+    { code: "es", flag: "https://flagpedia.net/data/flags/icon/36x27/es.webp", label: "Español" },
+    { code: "fr", flag: "https://flagpedia.net/data/flags/icon/36x27/fr.webp", label: "Français" },
+  ];
+
   return (
-    <main className="mt-14">
+    <main className="">
       <section id="about" className="min-h-screen py-8 px-6 bg-[var(--black)] text-[var(--green)]">
         <div className="max-w-8xl mx-auto text-center">
-          <h1 className='text-[24px] mb-20'>{dict.HeaderTitle}</h1>
+          <div className="flex justify-between items-center w-full mb-20 px-4">
+            <div /> {/* Espaço vazio para balancear o layout */}
+            <h1 className="text-[24px] text-center flex-1">{dict.HeaderTitle}</h1>
+            <div className="flex space-x-2">
+              {languages.map(({ code, flag, label }) => (
+                <Link key={code} href={`/${code}`} title={label}>
+                  <img
+                    src={flag}
+                    alt={label}
+                    className="w-6 h-auto hover:scale-110 transition-transform cursor-pointer"
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
           <div className='flex flex-col md:flex-row items-center gap-8'>
             <div className="w-full md:w-1/2 p-4 text-left">
               <h2 className="text-[90px] mb-4">{dict.AboutTitle}</h2>
               <p className="text-[28px] leading-relaxed">{dict.AboutDescription}</p>
-              <a
-                href={`/${lang}#skills`}
-                className="text-[28px] rounded-3xl text-[var(--green)] bg-[var(--white)] 
-             hover:text-[var(--white)] hover:bg-[var(--green)] 
-             px-8 py-1 border-2 border-[var(--green)] inline-block
-             transition duration-300 ease-in-out"
-              >
-                {dict.HeaderSkills}
-              </a>
             </div>
             <div className="relative w-full h-[500px] md:h-[700px]">
               <Image

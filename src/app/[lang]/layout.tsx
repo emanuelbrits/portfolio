@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../globals.css';
 import { getDictionary } from '../lib/i18n';
+import BottomNavbar from '../components/BottomNavbar';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -55,9 +56,9 @@ export default async function RootLayout(props: {
         {/* Título dinâmico se quiser */}
         <title>Emanuel Brito | Desenvolvedor Front-end</title>
       </head>
-      <body>
-        <Header lang={lang} dictionary={dictionary} />
+      <body className="">
         {children}
+        <BottomNavbar lang={lang} dictionary={dictionary} />
         <Footer dictionary={dictionary} />
       </body>
     </html>
