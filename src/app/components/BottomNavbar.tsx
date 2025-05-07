@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { GoHomeFill, GoMail } from 'react-icons/go';
-import { FaTools, FaBriefcase, FaGraduationCap, FaCode } from 'react-icons/fa';
+import { FaTools, FaCode, FaBrain } from 'react-icons/fa';
+import { GiBrain } from 'react-icons/gi';
 
 type BottomNavbarProps = {
     lang: string;
@@ -46,13 +47,7 @@ export default function BottomNavbar({ lang, dictionary }: BottomNavbarProps) {
                     <GoHomeFill />
                 </a>
                 <a href={`/${lang}#skills`} className={getButtonClass('skills')}>
-                    <FaTools />
-                </a>
-                <a href={`/${lang}#experience`} className={getButtonClass('experience')}>
-                    <FaBriefcase />
-                </a>
-                <a href={`/${lang}#education`} className={getButtonClass('education')}>
-                    <FaGraduationCap />
+                    <GiBrain />
                 </a>
                 <a href={`/${lang}#projects`} className={getButtonClass('projects')}>
                     <FaCode />

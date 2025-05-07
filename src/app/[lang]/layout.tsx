@@ -1,7 +1,6 @@
 // app/[lang]/layout.tsx
 import { ReactNode } from 'react';
 import { i18n } from '../lib/i18n-config';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../globals.css';
 import { getDictionary } from '../lib/i18n';
@@ -16,7 +15,7 @@ export default async function RootLayout(props: {
   params: Promise<{ lang: string }>;
 }) {
   const { children, params } = props;
-  const { lang } = await params; // <-- Aqui está a chave da correção ⚠️
+  const { lang } = await params;
 
   const dictionary = await getDictionary(lang);
 
