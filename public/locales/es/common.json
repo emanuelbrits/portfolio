@@ -45,8 +45,13 @@
 
 
   "ContactTitle": "Contacto",
-  "ContactDescription": "¡Hablemos! Envíame un mensaje o agrégame en LinkedIn.",
-  "ContactEmail": "Email: ",
-  "ContactLinkedIn": "LinkedIn: ",
-  "ContactGitHub": "GitHub: "
+  "ContactDescription": "¿Te gustó lo que viste? Hablemos sobre cómo puedo ayudarte con tu proyecto.",
+  "ContactGetInTouch": "Ponte en contacto",
+  "Contact": "Contacto",
+  "ContactSocialMedia": "Redes sociales",
+  "ContactForm": "Formulario de contacto",
+  "ContactName": "Nombre",
+  "ContactEmail": "Correo electrónico",
+  "ContactMessage": "Mensaje",
+  "ContactSend": "Enviar"
 }

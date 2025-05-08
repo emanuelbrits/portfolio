@@ -5,7 +5,7 @@ type FooterProps = {
 
 export default function Footer({ dictionary }: FooterProps) {
     return (
-        <footer className="bg-gray-800 text-white py-6">
+        <footer className="bg-[var(--black)] text-[var(--white)] py-6">
             <div className="container mx-auto text-center">
                 <p>&copy; {dictionary.FooterRights}</p>
                 <p className="mt-2">

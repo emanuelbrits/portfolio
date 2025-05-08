@@ -47,7 +47,9 @@ h4 {
 
 p,
 a,
-span {
+span,
+label,
+input {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     /* font-style: italic; */

@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import ProjectsSection from '../components/ProjectsSection';
+import { FaMessage } from 'react-icons/fa6';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 export default async function Home({
   params,
@@ -44,7 +46,7 @@ export default async function Home({
       description: dict.ProjectsExampleDescription1,
       repo: "https://github.com/emanuelbrits/Marketplace_control_R6",
       demo: "https://marketplace-control-r6.vercel.app",
-      image: "/images/marketplace.png", // Coloque suas imagens na pasta public ou use links externos
+      image: "/images/marketplace.png",
     },
     {
       title: dict.ProjectsExampleTitle2,
@@ -61,18 +63,7 @@ export default async function Home({
         <div className="max-w-8xl mx-auto text-center">
           <div className="flex justify-between items-center w-full mb-20 px-4">
             <div /> {/* Espaço vazio para balancear o layout */}
-            <h1 className="text-[24px] text-center flex-1">{dict.HeaderTitle}</h1>
-            <div className="flex space-x-2">
-              {languages.map(({ code, flag, label }) => (
-                <Link key={code} href={`/${code}`} title={label}>
-                  <img
-                    src={flag}
-                    alt={label}
-                    className="w-6 h-auto hover:scale-110 transition-transform cursor-pointer"
-                  />
-                </Link>
-              ))}
-            </div>
+            <LanguageSwitcher currentLang={lang} languages={languages}></LanguageSwitcher>
           </div>
           <div className='flex flex-col md:flex-row items-center gap-8'>
             <div className="w-full md:w-1/2 p-4 text-left">
@@ -92,7 +83,7 @@ export default async function Home({
         </div>
       </section>
 
-      <section id="skills" className="min-h-screen py-16 px-6 bg-[var(--white)] text-[var(--black)]">
+      <section id="skills" className="py-16 px-6 bg-[var(--white)] text-[var(--black)]">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-18">
           {/* Lado esquerdo: Experiência e Educação */}
           <div className="flex flex-col justify-around w-full lg:w-1/2 min-h-[70vh] space-y-8">
@@ -145,24 +136,79 @@ export default async function Home({
 
       <ProjectsSection dict={dict} projects={projects} />
 
-      <section id="contact" className="min-h-screen py-16 px-6 bg-[var(--white)] text-[var(--black)]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">{dict.ContactTitle}</h2>
-          <p className="text-lg mb-4">{dict.ContactDescription}</p>
-          <ul className="space-y-2 text-lg">
-            <li>
-              <FaEnvelope className="w-5 h-5 text-blue-500 inline mr-2" />
-              <a href="mailto:emanuelbrito.acb@gmail.com" className="text-blue-500">emanuelbrito.acb@gmail.com</a>
-            </li>
-            <li>
-              <FaLinkedin className="w-5 h-5 text-blue-500 inline mr-2" />
-              <a href="https://www.linkedin.com/in/emanuel-brito-545a65236" target='_blank' className="text-blue-500">/emanuel-brito</a>
-            </li>
-            <li>
-              <FaGithub className="w-5 h-5 text-blue-500 inline mr-2" />
-              <a href="https://github.com/emanuelbrits" target='_blank' className="text-blue-500">/emanuelbrits</a>
-            </li>
-          </ul>
+      <section id="contact" className=" py-16 px-6 bg-[var(--white)] text-[var(--black)]">
+        <div className="max-w-4xl mx-auto text-center flex flex-col">
+          <h2 className="text-4xl font-bold mb-10">{dict.ContactTitle}</h2>
+
+          <div className="flex flex-col md:flex-row gap-12">
+            {/* Informações de contato */}
+            <div className="md:w-1/2 flex flex-col gap-6 text-start">
+              <h1 className="text-2xl md:text-3xl font-semibold text-[var(--black)] uppercase">{dict.ContactDescription}</h1>
+              <h2 className="text-xl flex items-center gap-2 font-medium text-[var(--black)]">
+                {dict.ContactGetInTouch} <FaMessage className="w-5 h-5" />
+              </h2>
+
+              <div className="flex flex-col gap-4 mt-4">
+                <div>
+                  <h3 className="uppercase text-3x1 text-[var(--black)]">{dict.Contact}</h3>
+                  <a href="mailto:emanuelbrito.acb@gmail.com" className="text-4x1 text-[var(--green)] hover:underline">
+                    emanuelbrito.acb@gmail.com
+                  </a>
+                </div>
+
+                <div>
+                  <h3 className="uppercase text-3x text-[var(--black)]1">{dict.ContactSocialMedia}</h3>
+                  <div className="flex gap-4 mt-1">
+                    <a href="https://www.linkedin.com/in/emanuel-brito-545a65236" target="_blank" className="text-[var(--green)]">
+                      <FaLinkedin className="w-8 h-8" />
+                    </a>
+                    <a href="https://github.com/emanuelbrits" target="_blank" className="text-[var(--green)]">
+                      <FaGithub className="w-8 h-8" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Formulário */}
+            <div className="md:w-1/2">
+              <form className="flex flex-col gap-4 text-start">
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="name" className="font-medium">{dict.ContactName}</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--green)]"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="email" className="font-medium">{dict.ContactEmail}</label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--green)]"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="message" className="font-medium">{dict.ContactMessage}</label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    className="border border-gray-300 rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-[var(--green)]"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="mt-4 bg-[var(--green)] text-[var(--white)] px-6 py-2 rounded-lg hover:bg-[var(--black)] hover:text-[var(--green)] transition duration-400 font-medium cursor-pointer"
+                >
+                  {dict.ContactSend}
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

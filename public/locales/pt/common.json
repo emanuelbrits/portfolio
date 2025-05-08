@@ -45,8 +45,14 @@
   "ProjectLink2": "Link do projeto",
 
   "ContactTitle": "Contato",
-  "ContactDescription": "Vamos conversar! Me mande uma mensagem ou me adicione no LinkedIn.",
-  "ContactEmail": "Email: ",
-  "ContactLinkedIn": "LinkedIn: ",
-  "ContactGitHub": "GitHub: "
+  "ContactDescription": "Gostou do que viu? Vamos conversar sobre como posso ajudar no seu projeto.",
+  "ContactGetInTouch": "Entre em contato",
+  "Contact": "Contato",
+  "ContactSocialMedia": "Redes sociais",
+  "ContactForm": "Formulário para contato",
+  "ContactName": "Nome",
+  "ContactEmail": "Email",
+  "ContactMessage": "Mensagem",
+  "ContactSend": "Enviar"
+
 }
