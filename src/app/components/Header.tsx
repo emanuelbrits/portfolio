@@ -19,8 +19,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-11">
-      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Título fixo à esquerda sem quebra */}
+      <nav className="container px-4 py-3 flex justify-between items-center">
         <Link
           href={`/${lang}`}
           className="text-2xl font-bold text-black whitespace-nowrap"
@@ -28,7 +27,6 @@ export default function Header({ lang, dictionary }: HeaderProps) {
           {dictionary.HeaderTitle}
         </Link>
 
-        {/* Botão hambúrguer no mobile */}
         <button
           className="lg:hidden flex flex-col justify-center items-center w-8 h-8 relative z-20 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -49,12 +47,10 @@ export default function Header({ lang, dictionary }: HeaderProps) {
         </button>
 
 
-        {/* Menu */}
         <div
           className={`${isOpen ? "block" : "hidden"
             } absolute top-full left-0 w-full bg-white shadow-md lg:shadow-none lg:bg-transparent lg:static lg:flex lg:justify-end lg:items-center lg:space-x-6`}
         >
-          {/* Seções */}
           <ul className="flex flex-col lg:flex-row lg:space-x-6 p-4 lg:p-0">
             <li>
               <a href={`/${lang}#about`} className="text-lg text-gray-700 hover:text-black">
@@ -88,7 +84,6 @@ export default function Header({ lang, dictionary }: HeaderProps) {
             </li>
           </ul>
 
-          {/* Bandeiras */}
           <div className="flex space-x-2 p-4 lg:p-0">
             {languages.map(({ code, flag, label }) => (
               <Link key={code} href={`/${code}`} title={label}>

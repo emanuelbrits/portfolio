@@ -9,49 +9,14 @@
   "FooterRights": "2025 My Portfolio. All rights reserved.",
   "FooterThanks": "Made with 💙 using Next.js and TailwindCSS.",
 
-  "AboutTitle": "About Me",
-  "AboutDescription": "Hi! I'm Emanuel Brito, a front-end developer focused on creating modern and accessible interfaces. I currently work at IBGE providing technical support and improving digital processes, and I hold a degree from IFPI. I'm always looking to grow with new technologies and best development practices.",
+  "home": "Home",
+  "projects": "Projects",
+  "about": "About",
+  "contact": "Get in touch",
 
-  "SkillsTitle": "Skills",
-  "SkillsLanguages": "Languages: JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks: React, Angular, Tailwind CSS",
-  "SkillsTools": "Tools: Git, VS Code, Figma",
-  "SkillsExtras": "Extras: Responsiveness, Accessibility, UI/UX",
+  "WelcomeGreeting": "Hi, I'm Emanuel 👋",
+  "WelcomeFunction": "Fullstack Developer",
+  "WelcomeText": "I'm a Brazilian developer passionate about technology and building innovative solutions. I love turning ideas into efficient digital products with great user experiences."
 
-  "ExperienceTitle": "Experience",
-  "ExperienceIBGE": "IBGE – Brazilian Institute of Geography and Statistics",
-  "ExperienceRole": "IT Support Staff",
-  "ExperienceDetails1": "Technical support for institution users.",
-  "ExperienceDetails2": "Maintenance of systems and equipment.",
-  "ExperienceDetails3": "Collaboration on internal digital process improvements.",
-  "ExperienceDetails4": "During my internship at IBGE, I collaborated in the development of a system for managing the inventory of institutional assets. I actively participated in structuring the features, contributing both to requirements gathering and the technical implementation of the system. The goal was to improve organization, traceability, and data updating of the institution’s assets, promoting greater efficiency and reducing errors in asset management.",
-
-  "EducationTitle": "Education",
-  "EducationIFPI": "Federal Institute of Piauí (IFPI)",
-  "EducationCourse": "Bachelor's degree in Systems Analysis and Development",
-  "EducationYears": "2022 – 2025",
-
-  "ProjectsTitle": "Projects",
-  
-  "ProjectsExampleTitle1": "Marketplace Control R6",
-  "ProjectsExampleDescription1": "This system is a platform for managing marketplace items from Rainbow Six: Siege. It allows automatic extraction of information from external websites like Stats.cc, stores data in Supabase (such as item name, type, weapon/operator, and image), and lets users filter or list items based on criteria like type (skins, headgears, uniforms) and weapon/operator. The interface makes it easy to view and manage registered items, making it useful for those who want to track or organize their collection or investments accurately.",
-  "ProjectsExampleLink1": "View on GitHub",
-  "ProjectLink1": "Project link",
-
-  "ProjectsExampleTitle2": "FixIT",
-  "ProjectsExampleDescription2": "The system connects customers with issues in electronic devices (such as smartphones, tablets, laptops, and desktops) to skilled IT technicians. Customers can register posts detailing their problems, including photos and location. Technicians view these posts by filtering by category, location, and keyword, and can offer support via an integrated chat, promoting direct and efficient communication for problem resolution.",
-  "ProjectsExampleLink2": "View on GitHub",
-  "ProjectLink2": "Project link",
-
-  "ContactTitle": "Contact",
-  "ContactDescription": "Liked what you saw? Let's talk about how I can help with your project.",
-  "ContactGetInTouch": "Get in touch",
-  "Contact": "Contact",
-  "ContactSocialMedia": "Social media",
-  "ContactForm": "Contact form",
-  "ContactName": "Name",
-  "ContactEmail": "Email",
-  "ContactMessage": "Message",
-  "ContactSend": "Send"
   
 }

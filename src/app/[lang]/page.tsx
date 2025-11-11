@@ -1,4 +1,3 @@
-// app/[lang]/page.tsx
 import { FaEnvelope, FaGithub, FaLinkedin, FaJs, FaReact, FaNode, FaGitAlt, FaDocker, FaHtml5, FaCss3, FaAngular, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiPostgresql, SiNextdotjs } from 'react-icons/si';
 import { getDictionary } from '../lib/i18n';
@@ -8,6 +7,10 @@ import dynamic from 'next/dynamic';
 import ProjectsSection from '../components/ProjectsSection';
 import { FaMessage } from 'react-icons/fa6';
 import LanguageSwitcher from '../components/LanguageSwitcher';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Welcome from '../components/Welcome';
+import Projects from '../components/projects';
 
 export default async function Home({
   params,
@@ -17,13 +20,6 @@ export default async function Home({
   const { lang } = await params;
 
   const dict = await getDictionary(lang);
-
-  const languages = [
-    { code: "en", flag: "https://flagpedia.net/data/flags/icon/36x27/us.webp", label: "English" },
-    { code: "pt", flag: "https://flagpedia.net/data/flags/icon/36x27/br.webp", label: "Português" },
-    { code: "es", flag: "https://flagpedia.net/data/flags/icon/36x27/es.webp", label: "Español" },
-    { code: "fr", flag: "https://flagpedia.net/data/flags/icon/36x27/fr.webp", label: "Français" },
-  ];
 
   const skills = [
     { name: 'HTML5', icon: <FaHtml5 className="text-red-500" /> },
@@ -46,48 +42,28 @@ export default async function Home({
       description: dict.ProjectsExampleDescription1,
       repo: "https://github.com/emanuelbrits/Marketplace_control_R6",
       demo: "https://marketplace-control-r6.vercel.app",
-      image: "/images/marketplace.png",
+      image: "/images/marketplace.webp",
     },
     {
       title: dict.ProjectsExampleTitle2,
       description: dict.ProjectsExampleDescription2,
       repo: "https://github.com/emanuelbrits/FixIT",
       demo: "https://fix-it-seven.vercel.app",
-      image: "/images/fixit.png",
+      image: "/images/fixit.webp",
     },
   ];
 
-  return (
-    <main className="">
-      <section id="about" className="min-h-screen py-8 px-6 bg-[var(--black)] text-[var(--green)]">
-        <div className="max-w-8xl mx-auto text-center">
-          <div className="flex justify-between items-center w-full mb-20 px-4">
-            <div /> {/* Espaço vazio para balancear o layout */}
-            <LanguageSwitcher currentLang={lang} languages={languages}></LanguageSwitcher>
-          </div>
-          <div className='flex flex-col md:flex-row items-center gap-8'>
-            <div className="w-full md:w-1/2 p-4 text-left">
-              <h2 className="text-[90px] mb-4">{dict.AboutTitle}</h2>
-              <p className="text-[28px] leading-relaxed">{dict.AboutDescription}</p>
-            </div>
-            <div className="relative w-full h-[500px] md:h-[700px]">
-              <Image
-                src="/images/home_image.png"
-                alt="Imagem da home"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+  const dictionary = await getDictionary(lang);
 
-      <section id="skills" className="py-16 px-6 bg-[var(--white)] text-[var(--black)]">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-18">
-          {/* Lado esquerdo: Experiência e Educação */}
+  return (
+    <main className="w-screen overflow-x-hidden px-6 lg:px-7.5 xl:px-14 2xl:px-60">
+      <Navbar lang={lang} dictionary={dictionary} />
+      <Welcome lang={lang} dictionary={dictionary} />
+      <Projects lang={lang} dictionary={dictionary} />
+
+      {/* <section id="skills" className="py-16 px-6 bg-[var(--white)] text-[var(--black)]">
+        <div className="flex flex-col lg:flex-row gap-18">
           <div className="flex flex-col justify-around w-full lg:w-1/2 min-h-[70vh] space-y-8">
-            {/* Experiência */}
             <div>
               <h2 className="text-4xl font-bold text-center mb-4">{dict.ExperienceTitle}</h2>
               <div className="space-y-4">
@@ -105,7 +81,6 @@ export default async function Home({
               </div>
             </div>
 
-            {/* Educação */}
             <div>
               <h2 className="text-4xl font-bold text-center mb-4">{dict.EducationTitle}</h2>
               <div>
@@ -116,7 +91,6 @@ export default async function Home({
             </div>
           </div>
 
-          {/* Lado direito: Skills */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <h2 className="text-4xl font-bold text-center mb-8">{dict.SkillsTitle}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
@@ -137,11 +111,10 @@ export default async function Home({
       <ProjectsSection dict={dict} projects={projects} />
 
       <section id="contact" className=" py-16 px-6 bg-[var(--white)] text-[var(--black)]">
-        <div className="max-w-4xl mx-auto text-center flex flex-col">
+        <div className="text-center flex flex-col">
           <h2 className="text-4xl font-bold mb-10">{dict.ContactTitle}</h2>
 
           <div className="flex flex-col md:flex-row gap-12">
-            {/* Informações de contato */}
             <div className="md:w-1/2 flex flex-col gap-6 text-start">
               <h1 className="text-2xl md:text-3xl font-semibold text-[var(--black)] uppercase">{dict.ContactDescription}</h1>
               <h2 className="text-xl flex items-center gap-2 font-medium text-[var(--black)]">
@@ -170,7 +143,6 @@ export default async function Home({
               </div>
             </div>
 
-            {/* Formulário */}
             <div className="md:w-1/2">
               <form className="flex flex-col gap-4 text-start">
                 <div className="flex flex-col gap-1">
@@ -211,6 +183,7 @@ export default async function Home({
           </div>
         </div>
       </section>
+      <Footer dictionary={dictionary} /> */}
     </main>
   );
 }

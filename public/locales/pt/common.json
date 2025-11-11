@@ -6,9 +6,18 @@
   "HeaderEducation": "Formação",
   "HeaderProjects": "Projetos",
   "HeaderContact": "Contato",
+
+  "home": "Início",
+  "projects": "Projetos",
+  "about": "Sobre",
+  "contact": "Entre em contato",
   
   "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",
   "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS.",
+
+  "WelcomeGreeting": "Olá, sou Emanuel 👋",
+  "WelcomeFunction": "Desenvolvedor Fullstack",
+  "WelcomeText": "Sou um desenvolvedor brasileiro apaixonado por tecnologia e criação de soluções inovadoras. Adoro transformar ideias em produtos digitais eficientes e com excelente experiência para o usuário.",
 
   "AboutTitle": "Sobre Mim",
   "AboutDescription": "Olá! Sou Emanuel Brito, desenvolvedor front-end focado em criar interfaces modernas e acessíveis. Trabalho atualmente no IBGE com suporte técnico e melhoria de processos digitais, e sou formado pelo IFPI. Busco sempre evoluir com novas tecnologias e boas práticas de desenvolvimento.",

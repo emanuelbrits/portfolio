@@ -9,6 +9,15 @@
   "FooterRights": "2025 Mon Portfolio. Tous droits réservés.",
   "FooterThanks": "Fait avec 💙 en utilisant Next.js et TailwindCSS.",
 
+  "home": "Accueil",
+  "projects": "Projets",
+  "about": "À propos",
+  "contact": "Contactez-moi",
+
+  "WelcomeGreeting": "Salut, je suis Emanuel 👋",
+  "WelcomeFunction": "Développeur Fullstack",
+  "WelcomeText": "Je suis un développeur brésilien passionné par la technologie et la création de solutions innovantes. J’aime transformer des idées en produits numériques efficaces offrant une excellente expérience utilisateur.",
+
   "AboutTitle": "À propos de moi",
   "AboutDescription": "Bonjour ! Je suis Emanuel Brito, développeur front-end spécialisé dans la création d'interfaces modernes et accessibles. Je travaille actuellement à l'IBGE en tant que support technique et j'améliore les processus numériques. Je suis diplômé de l'IFPI et toujours motivé à apprendre de nouvelles technologies et bonnes pratiques.",
 
