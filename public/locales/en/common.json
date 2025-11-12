@@ -16,7 +16,10 @@
 
   "WelcomeGreeting": "Hi, I'm Emanuel 👋",
   "WelcomeFunction": "Fullstack Developer",
-  "WelcomeText": "I'm a Brazilian developer passionate about technology and building innovative solutions. I love turning ideas into efficient digital products with great user experiences."
+  "WelcomeText": "I'm a Brazilian developer passionate about technology and building innovative solutions. I love turning ideas into efficient digital products with great user experiences.",
 
-  
+  "fixitDescription": "Web platform that connects customers with electronic repair providers, streamlining communication and supporting the local economy.",
+  "oikosDescription": "Complete software for managing guesthouses and reservations, offering easy control over guests, rooms, and payments.",
+  "andradebardawilDescription": "Modern institutional website developed for Andrade Bardawil law firm, showcasing legal services, practice areas, and providing an easy way for clients to get in touch.",
+  "controlR6Description": "Marketplace for Rainbow Six Siege players to easily and securely manage operator skins and items."
 }

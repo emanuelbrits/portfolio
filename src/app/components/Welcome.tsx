@@ -17,11 +17,11 @@ export default async function Welcome({ lang, dictionary }: NavbarProps) {
                     <div className="w-full text-left">
                         <p className="text-2xl leading-relaxed">{dict.WelcomeGreeting}</p>
                         <h2
-                            className="text-5xl lg:text-6xl xl:text-8xl font-bold mb-4"
+                            className="text-5xl md:text-6xl xl:text-8xl font-bold mb-4"
                             dangerouslySetInnerHTML={{
                                 __html: dict.WelcomeFunction.replace(
                                     /Full/i,
-                                    '<span class="text-red-500 !text-5xl lg:!text-6xl xl:!text-8xl !font-bold" style="font-family: inherit;">Full</span>'
+                                    '<span class="text-red-500 !text-5xl md:!text-6xl xl:!text-8xl !font-bold" style="font-family: inherit;">Full</span>'
                                 ),
                             }}
                         />

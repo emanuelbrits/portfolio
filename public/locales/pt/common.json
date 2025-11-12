@@ -19,49 +19,8 @@
   "WelcomeFunction": "Desenvolvedor Fullstack",
   "WelcomeText": "Sou um desenvolvedor brasileiro apaixonado por tecnologia e criação de soluções inovadoras. Adoro transformar ideias em produtos digitais eficientes e com excelente experiência para o usuário.",
 
-  "AboutTitle": "Sobre Mim",
-  "AboutDescription": "Olá! Sou Emanuel Brito, desenvolvedor front-end focado em criar interfaces modernas e acessíveis. Trabalho atualmente no IBGE com suporte técnico e melhoria de processos digitais, e sou formado pelo IFPI. Busco sempre evoluir com novas tecnologias e boas práticas de desenvolvimento.",
- 
-  "SkillsTitle": "Habilidades",
-  "SkillsLanguages": "Linguagens: JavaScript, TypeScript, HTML, CSS",
-  "SkillsFrameworks": "Frameworks: React, Angular, Tailwind CSS",
-  "SkillsTools": "Ferramentas: Git, VS Code, Figma",
-  "SkillsExtras": "Extras: Responsividade, Acessibilidade, UI/UX",
-
-  "ExperienceTitle": "Experiência",
-  "ExperienceIBGE": "IBGE – Instituto Brasileiro de Geografia e Estatística",
-  "ExperienceRole": "Funcionário de Suporte de TI",
-  "ExperienceDetails1": "Atendimento técnico aos usuários da instituição.",
-  "ExperienceDetails2": "Manutenção de sistemas e equipamentos.",
-  "ExperienceDetails3": "Colaboração em melhorias de processos digitais internos.",
-  "ExperienceDetails4": "Durante meu estágio no IBGE, colaborei no desenvolvimento de um sistema para controle de inventário de bens patrimoniais. Participei ativamente da estruturação das funcionalidades, contribuindo tanto no levantamento de requisitos quanto na implementação técnica do sistema. O objetivo era melhorar a organização, rastreabilidade e atualização dos dados dos bens da instituição, promovendo maior eficiência e redução de erros no controle patrimonial.",
-
-  "EducationTitle": "Formação",
-  "EducationIFPI": "Instituto Federal do Piauí (IFPI)",
-  "EducationCourse": "Curso superior em Análise e Desenvolvimento de Sistemas",
-  "EducationYears": "2022 – 2025",
-
-  "ProjectsTitle": "Projetos",
-  
-  "ProjectsExampleTitle1": "Marketplace Control R6",
-  "ProjectsExampleDescription1": "Este sistema é uma plataforma de controle de itens do marketplace do Rainbow Six: Siege. Ele permite extrair informações automaticamente de sites externos como o Stats.cc, armazenar dados no Supabase (como nome, tipo, arma/operador e imagem dos itens) e filtrar ou listar esses itens com base em critérios como tipo (skins, headgears, uniformes) e arma/operador. A interface facilita a visualização e gerenciamento dos itens cadastrados, sendo útil para quem deseja acompanhar ou organizar sua coleção ou investimentos com precisão.",
-  "ProjectsExampleLink1": "Ver no GitHub",
-  "ProjectLink1": "Link do projeto",
-
-  "ProjectsExampleTitle2": "FixIT",
-  "ProjectsExampleDescription2": "O sistema conecta clientes que possuem problemas em dispositivos eletrônicos (como celulares, tablets, notebooks e desktops) com técnicos de informática capacitados. Os clientes podem registrar postagens detalhando seus problemas, incluindo fotos e localização. Técnicos visualizam essas postagens filtrando por categoria, localização e palavra-chave, e podem oferecer suporte por meio de um chat integrado, promovendo uma comunicação direta e eficiente para a resolução dos problemas.",
-  "ProjectsExampleLink2": "Ver no GitHub",
-  "ProjectLink2": "Link do projeto",
-
-  "ContactTitle": "Contato",
-  "ContactDescription": "Gostou do que viu? Vamos conversar sobre como posso ajudar no seu projeto.",
-  "ContactGetInTouch": "Entre em contato",
-  "Contact": "Contato",
-  "ContactSocialMedia": "Redes sociais",
-  "ContactForm": "Formulário para contato",
-  "ContactName": "Nome",
-  "ContactEmail": "Email",
-  "ContactMessage": "Mensagem",
-  "ContactSend": "Enviar"
-
+  "fixitDescription": "Sistema web que conecta clientes a prestadores de manutenção eletrônica, tornando o contato mais ágil e valorizando a economia local.",
+  "oikosDescription": "Software completo para gerenciamento de hospedagens e reservas de pousadas, com controle de hóspedes, quartos e pagamentos de forma simples e eficiente.",
+  "andradebardawilDescription": "Website institucional moderno desenvolvido para o escritório Andrade Bardawil, destacando serviços jurídicos, áreas de atuação e facilitando o contato com clientes.",
+  "controlR6Description": "Marketplace voltado para jogadores de Rainbow Six Siege, permitindo gerenciar skins e itens de operadores de forma simples e segura."
 }

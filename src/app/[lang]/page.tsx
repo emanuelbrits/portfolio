@@ -56,7 +56,7 @@ export default async function Home({
   const dictionary = await getDictionary(lang);
 
   return (
-    <main className="w-screen overflow-x-hidden px-6 lg:px-7.5 xl:px-14 2xl:px-60">
+    <main className="w-screen overflow-x-hidden px-6 lg:px-7.5 xl:px-14 2xl:px-30">
       <Navbar lang={lang} dictionary={dictionary} />
       <Welcome lang={lang} dictionary={dictionary} />
       <Projects lang={lang} dictionary={dictionary} />

@@ -32,7 +32,7 @@ const LanguageSwitcher = ({ currentLang, languages }: LanguageSwitcherProps) => 
     <div className="relative inline-block">
       <button
         onClick={toggleMenu}
-        className="flex items-center gap-2 px-3 py-2 rounded-full cursor-pointer bg-transparent"
+        className="flex items-center gap-2 md:px-3 md:py-2 rounded-full cursor-pointer bg-transparent"
       >
         <img src={current.flag} alt={current.label} className="w-6 h-auto" />
         <FaChevronDown
