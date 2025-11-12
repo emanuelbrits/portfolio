@@ -14,45 +14,45 @@ export default async function Home({
 
   const dict = await getDictionary(lang);
 
-  const skills = [
-    { name: 'HTML5', icon: <FaHtml5 className="text-red-500" /> },
-    { name: 'CSS3', icon: <FaCss3 className="text-blue-500" /> },
-    { name: 'JavaScript', icon: <FaJs className="text-yellow-500" /> },
-    { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
-    { name: 'Node.js', icon: <FaNode className="text-green-600" /> },
-    { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-    { name: 'Angular', icon: <FaAngular className="text-red-500" /> },
-    { name: 'NextJs', icon: <SiNextdotjs className="text-[var(--white)]" /> },
-    { name: 'TailwindCSS', icon: <SiTailwindcss className="text-sky-400" /> },
-    { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
-    { name: 'Docker', icon: <FaDocker className="text-blue-400" /> },
-    { name: 'PostgreSQL', icon: <SiPostgresql className="text-indigo-700" /> },
-  ];
+  // const skills = [
+  //   { name: 'HTML5', icon: <FaHtml5 className="text-red-500" /> },
+  //   { name: 'CSS3', icon: <FaCss3 className="text-blue-500" /> },
+  //   { name: 'JavaScript', icon: <FaJs className="text-yellow-500" /> },
+  //   { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
+  //   { name: 'Node.js', icon: <FaNode className="text-green-600" /> },
+  //   { name: 'React', icon: <FaReact className="text-cyan-400" /> },
+  //   { name: 'Angular', icon: <FaAngular className="text-red-500" /> },
+  //   { name: 'NextJs', icon: <SiNextdotjs className="text-[var(--white)]" /> },
+  //   { name: 'TailwindCSS', icon: <SiTailwindcss className="text-sky-400" /> },
+  //   { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
+  //   { name: 'Docker', icon: <FaDocker className="text-blue-400" /> },
+  //   { name: 'PostgreSQL', icon: <SiPostgresql className="text-indigo-700" /> },
+  // ];
 
-  const projects = [
-    {
-      title: dict.ProjectsExampleTitle1,
-      description: dict.ProjectsExampleDescription1,
-      repo: "https://github.com/emanuelbrits/Marketplace_control_R6",
-      demo: "https://marketplace-control-r6.vercel.app",
-      image: "/images/marketplace.webp",
-    },
-    {
-      title: dict.ProjectsExampleTitle2,
-      description: dict.ProjectsExampleDescription2,
-      repo: "https://github.com/emanuelbrits/FixIT",
-      demo: "https://fix-it-seven.vercel.app",
-      image: "/images/fixit.webp",
-    },
-  ];
+  // const projects = [
+  //   {
+  //     title: dict.ProjectsExampleTitle1,
+  //     description: dict.ProjectsExampleDescription1,
+  //     repo: "https://github.com/emanuelbrits/Marketplace_control_R6",
+  //     demo: "https://marketplace-control-r6.vercel.app",
+  //     image: "/images/marketplace.webp",
+  //   },
+  //   {
+  //     title: dict.ProjectsExampleTitle2,
+  //     description: dict.ProjectsExampleDescription2,
+  //     repo: "https://github.com/emanuelbrits/FixIT",
+  //     demo: "https://fix-it-seven.vercel.app",
+  //     image: "/images/fixit.webp",
+  //   },
+  // ];
 
   const dictionary = await getDictionary(lang);
 
   return (
     <main className="w-screen overflow-x-hidden px-6 lg:px-7.5 xl:px-14 2xl:px-30">
       <Navbar lang={lang} dictionary={dictionary} />
-      <Welcome lang={lang} dictionary={dictionary} />
-      <Projects lang={lang} dictionary={dictionary} />
+      <Welcome lang={lang}/>
+      <Projects lang={lang}/>
 
       {/* <section id="skills" className="py-16 px-6 bg-[var(--white)] text-[var(--black)]">
         <div className="flex flex-col lg:flex-row gap-18">
