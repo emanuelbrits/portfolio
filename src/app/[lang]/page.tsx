@@ -10,8 +10,6 @@ export default async function Home({
 }) {
   const { lang } = await params;
 
-  const dict = await getDictionary(lang);
-
   // const skills = [
   //   { name: 'HTML5', icon: <FaHtml5 className="text-red-500" /> },
   //   { name: 'CSS3', icon: <FaCss3 className="text-blue-500" /> },
