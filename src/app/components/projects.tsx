@@ -3,10 +3,9 @@ import ProjectsGrid from '../components/ProjectsGrid';
 
 type NavbarProps = {
   lang: string;
-  dictionary: { [key: string]: string };
 };
 
-export default async function Projects({ lang, dictionary }: NavbarProps) {
+export default async function Projects({ lang }: NavbarProps) {
   const dict = await getDictionary(lang);
 
   const projects = [

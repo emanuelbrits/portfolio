@@ -1,14 +1,7 @@
 import { FaEnvelope, FaGithub, FaLinkedin, FaJs, FaReact, FaNode, FaGitAlt, FaDocker, FaHtml5, FaCss3, FaAngular, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiPostgresql, SiNextdotjs } from 'react-icons/si';
 import { getDictionary } from '../lib/i18n';
-import Image from 'next/image';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import ProjectsSection from '../components/ProjectsSection';
-import { FaMessage } from 'react-icons/fa6';
-import LanguageSwitcher from '../components/LanguageSwitcher';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Welcome from '../components/Welcome';
 import Projects from '../components/projects';
 

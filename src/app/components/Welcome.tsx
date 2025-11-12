@@ -3,10 +3,9 @@ import Image from 'next/image';
 
 type NavbarProps = {
     lang: string;
-    dictionary: { [key: string]: string };
 };
 
-export default async function Welcome({ lang, dictionary }: NavbarProps) {
+export default async function Welcome({ lang }: NavbarProps) {
 
     const dict = await getDictionary(lang);
 
