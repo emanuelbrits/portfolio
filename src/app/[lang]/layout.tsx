@@ -14,7 +14,7 @@ export default async function RootLayout(props: {
   const { lang } = await params;
 
   return (
-    <html lang={lang} className='leading-none'>
+    <html lang={lang} className='leading-none bg-[var(--white)]'>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
