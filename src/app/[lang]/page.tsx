@@ -1,5 +1,3 @@
-import { FaJs, FaReact, FaNode, FaGitAlt, FaDocker, FaHtml5, FaCss3, FaAngular } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiPostgresql, SiNextdotjs } from 'react-icons/si';
 import { getDictionary } from '../lib/i18n';
 import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
