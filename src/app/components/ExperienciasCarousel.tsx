@@ -30,9 +30,9 @@ export default function ExperienciasCarousel({
                 slidesPerView={1}
                 className="w-full min-h-[400px] pb-16"
                 onBeforeInit={(swiper) => {
-                    // @ts-expect-error
+                    // @ts-expect-error swiper navigation refs
                     swiper.params.navigation.prevEl = prevRef.current;
-                    // @ts-expect-error
+                    // @ts-expect-error swiper navigation refs
                     swiper.params.navigation.nextEl = nextRef.current;
                 }}
             >
@@ -50,7 +50,7 @@ export default function ExperienciasCarousel({
                                         <span
                                             className={
                                                 last.toLowerCase() === "ibge" ||
-                                                last.toLowerCase() === "l’ibge" ||
+                                                    last.toLowerCase() === "l’ibge" ||
                                                     last.toLowerCase() === "freelancer" ||
                                                     last.toLowerCase() === "freelance"
                                                     ? "text-red-500 !font-bold"
