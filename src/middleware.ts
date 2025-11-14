@@ -17,9 +17,9 @@ export function middleware(request: Request) {
     return NextResponse.next();
   }
 
-  const userLang = request.headers.get('Accept-Language')?.split(',')[0] || 'en';
+  const userLang = request.headers.get('Accept-Language')?.split(',')[0] || 'pt';
 
-  const validLang = i18n.locales.includes(userLang) ? userLang : 'en';
+  const validLang = i18n.locales.includes(userLang) ? userLang : 'pt';
 
   const url = new URL(request.url);
   url.pathname = `/${validLang}${pathname}`;

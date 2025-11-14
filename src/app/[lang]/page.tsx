@@ -2,6 +2,7 @@ import { getDictionary } from '../lib/i18n';
 import Navbar from '../components/Navbar';
 import Welcome from '../components/Welcome';
 import Projects from '../components/projects';
+import Experiences from '../components/experiences';
 
 export default async function Home({
   params,
@@ -49,6 +50,7 @@ export default async function Home({
       <Navbar lang={lang} dictionary={dictionary} />
       <Welcome lang={lang}/>
       <Projects lang={lang}/>
+      <Experiences lang={lang} />
 
       {/* <section id="skills" className="py-16 px-6 bg-[var(--white)] text-[var(--black)]">
         <div className="flex flex-col lg:flex-row gap-18">

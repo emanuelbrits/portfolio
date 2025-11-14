@@ -86,3 +86,18 @@ li {
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
+
+@media (min-width: 810px) {
+  .from-810\:hidden { display: none; }
+  .from-810\:block { display: block; }
+}
+
+.swiper-pagination-bullet {
+  background: #585858 !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d40000 !important;
+  opacity: 1 !important;
+}

@@ -21,5 +21,15 @@
   "fixitDescription": "Plateforme web qui met en relation clients et réparateurs électroniques, facilitant les échanges et soutenant l'économie locale.",
   "oikosDescription": "Logiciel complet pour la gestion des hébergements et réservations, offrant un contrôle simple des clients, chambres et paiements.",
   "andradebardawilDescription": "Site institutionnel moderne développé pour le cabinet Andrade Bardawil, mettant en avant les services juridiques, les domaines d’activité et facilitant le contact avec les clients.",
-  "controlR6Description" :"Marketplace destiné aux joueurs de Rainbow Six Siege, permettant de gérer facilement et en toute sécurité les skins et objets des opérateurs."
+  "controlR6Description" :"Marketplace destiné aux joueurs de Rainbow Six Siege, permettant de gérer facilement et en toute sécurité les skins et objets des opérateurs.",
+
+  "ibgeTitle": "Stage à l’IBGE",
+  "ibgeDate": "Octobre 2023 - Juin 2025",
+  "ibgeAtividade1": "J’ai développé un système pour organiser les biens d’inventaire.",
+  "ibgeAtividade2": "Responsable de la maintenance et de l’installation des dispositifs.",
+
+  "freelaTitle": "Freelance",
+  "freelaDate": "Juillet 2025 - Présent",
+  "freelaAtividade1": "J'ai développé la landing page du cabinet d'avocats Andrade Bardawil, en donnant la priorité à l'expérience utilisateur, aux performances et à l'esthétique.",
+  "freelaAtividade2": "J'ai développé un système de gestion de réservations et d'hébergements pour la pousada Oikos à Barra Grande, Piauí, garantissant sécurité et fiabilité dans les opérations."
 }

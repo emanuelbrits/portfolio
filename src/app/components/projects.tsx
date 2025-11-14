@@ -1,11 +1,11 @@
 import { getDictionary } from '../lib/i18n';
 import ProjectsGrid from '../components/ProjectsGrid';
 
-type NavbarProps = {
+type ProjectProps = {
   lang: string;
 };
 
-export default async function Projects({ lang }: NavbarProps) {
+export default async function Projects({ lang }: ProjectProps) {
   const dict = await getDictionary(lang);
 
   const projects = [
