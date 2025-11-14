@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { FaCheck } from "react-icons/fa";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 export default function ExperienciasCarousel({
     experiencias,
@@ -31,9 +30,9 @@ export default function ExperienciasCarousel({
                 slidesPerView={1}
                 className="w-full min-h-[400px] pb-16"
                 onBeforeInit={(swiper) => {
-                    // @ts-ignore
+                    // @ts-expect-error
                     swiper.params.navigation.prevEl = prevRef.current;
-                    // @ts-ignore
+                    // @ts-expect-error
                     swiper.params.navigation.nextEl = nextRef.current;
                 }}
             >
