@@ -1,6 +1,4 @@
 import { getDictionary } from '../lib/i18n';
-import ExperiencesCarousel from '../components/ExperienciasCarousel';
-import ExperiencesTabs from './ExperiencesTabs';
 
 type SkillsProps = {
     lang: string;
