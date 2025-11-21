@@ -31,5 +31,12 @@
   "freelaTitle": "Freelancer",
   "freelaDate": "July 2025 - Present",
   "freelaAtividade1": "Developed the landing page for the Andrade Bardawil law firm, prioritizing user experience, performance, and aesthetics.",
-  "freelaAtividade2": "Developed a reservation and lodging management system for Oikos Pousada in Barra Grande, Piauí, ensuring security and reliability in operations."
+  "freelaAtividade2": "Developed a reservation and lodging management system for Oikos Pousada in Barra Grande, Piauí, ensuring security and reliability in operations.",
+
+  "skills": "Skills",
+  "softSkills": "Soft Skills",
+  "comunicacaoEfetiva": "Effective Communication",
+  "trabalhoEquipe": "Teamwork",
+  "comprometimento": "Commitment",
+  "proatividade": "Proactivity"
 }

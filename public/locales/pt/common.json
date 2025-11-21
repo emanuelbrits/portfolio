@@ -32,5 +32,12 @@
   "freelaTitle": "Freelancer",
   "freelaDate": "Julho 2025 - Presente",
   "freelaAtividade1": "Desenvolvi a landing page para o escritório de advocacia Andrade Bardawil, priorizando a experiência do usuário, performance e estética.",
-  "freelaAtividade2": "Desenvolvi um gerenciador de reservas e hospedagens para a pousada Oikos em Barra Grande, Piauí, garantindo segurança e confiabilidade nas operações."
+  "freelaAtividade2": "Desenvolvi um gerenciador de reservas e hospedagens para a pousada Oikos em Barra Grande, Piauí, garantindo segurança e confiabilidade nas operações.",
+
+  "skills": "Habilidades",
+  "softSkills": "Soft Skills",
+  "comunicacaoEfetiva": "Comunicação Efetiva",
+  "trabalhoEquipe": "Trabalho em equipe",
+  "comprometimento": "Comprometimento",
+  "proatividade": "Proatividade"
 }
