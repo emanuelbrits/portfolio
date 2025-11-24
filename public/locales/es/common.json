@@ -6,7 +6,7 @@
   "HeaderEducation": "Educación",
   "HeaderProjects": "Proyectos",
   "HeaderContact": "Contacto",
-  "FooterRights": "2025 Mi Portafolio. Todos los derechos reservados.",
+  "FooterRights": "2025 Todos los derechos reservados.",
   "FooterThanks": "Hecho con 💙 usando Next.js y TailwindCSS.",
 
   "home": "Inicio",
@@ -38,5 +38,7 @@
   "comunicacaoEfetiva": "Comunicación Efectiva",
   "trabalhoEquipe": "Trabajo en Equipo",
   "comprometimento": "Compromiso",
-  "proatividade": "Proactividad"
+  "proatividade": "Proactividad",
+
+  "workTogether": "¿Interesado en trabajar juntos?"
 }

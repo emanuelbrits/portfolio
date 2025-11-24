@@ -12,7 +12,7 @@
   "about": "Sobre",
   "contact": "Entre em contato",
   
-  "FooterRights": "2025 Meu Portfólio. Todos os direitos reservados.",
+  "FooterRights": "2025 Todos os direitos reservados.",
   "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS.",
 
   "WelcomeGreeting": "Olá, sou Emanuel 👋",
@@ -39,5 +39,7 @@
   "comunicacaoEfetiva": "Comunicação Efetiva",
   "trabalhoEquipe": "Trabalho em equipe",
   "comprometimento": "Comprometimento",
-  "proatividade": "Proatividade"
+  "proatividade": "Proatividade",
+
+  "workTogether": "Interessado em trabalhar juntos?"
 }
