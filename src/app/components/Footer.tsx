@@ -43,6 +43,17 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                     </a>
 
                     <a
+                        href={`/${lang}/about`}
+                        className={
+                            isActive(`/${lang}/about`)
+                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                        }
+                    >
+                        {dictionary.about}
+                    </a>
+
+                    <a
                         href={`/${lang}/contact`}
                         className={
                             isActive(`/${lang}/contact`)
@@ -50,7 +61,7 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                                 : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
                         }
                     >
-                        {dictionary.contact}
+                        {dictionary.HeaderContact}
                     </a>
                 </div>
                 <div className="flex flex-row justify-center md:justify-end gap-8">
