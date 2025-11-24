@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
 import LanguageSwitcher from './LanguageSwitcher';
 import { FaRegMessage } from 'react-icons/fa6';
+import { usePathname } from "next/navigation";
 
 type NavbarProps = {
     lang: string;
@@ -21,33 +22,13 @@ const languages = [
 ];
 
 export default function Navbar({ lang, dictionary }: NavbarProps) {
-    const [activeSection, setActiveSection] = useState<string | null>(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleSection = entries.find(entry => entry.isIntersecting);
-                if (visibleSection?.target.id) {
-                    setActiveSection(visibleSection.target.id);
-                }
-            },
-            { root: null, rootMargin: '0px', threshold: 0.5 }
-        );
+    const pathname = usePathname();
 
-        const targets = sections
-            .map(id => document.getElementById(id))
-            .filter(Boolean) as HTMLElement[];
-
-        targets.forEach(target => observer.observe(target));
-        return () => observer.disconnect();
-    }, []);
-
-    const getButtonClass = (section: string) =>
-        `md:px-3 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out ${activeSection === section
-            ? 'text-red-500 font-bold'
-            : 'bg-[var(--white)] text-gray-600 hover:text-red-500'
-        }`;
+    const isActive = (href: string) => {
+        return pathname === href || pathname === `${href}/`;
+    };
 
     return (
         <header className="w-full top-0 bg-[var(--white)] z-40">
@@ -61,15 +42,36 @@ export default function Navbar({ lang, dictionary }: NavbarProps) {
                     </a>
                 </div>
                 <div>
-                    <a href={`/${lang}`} className={getButtonClass('home')}>
+                    <a
+                        href={`/${lang}`}
+                        className={
+                            isActive(`/${lang}`)
+                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                        }
+                    >
                         {dictionary.home}
                     </a>
 
-                    <a href={`/${lang}#projects`} className={getButtonClass('projects')}>
+                    <a
+                        href={`/${lang}/projects`}
+                        className={
+                            isActive(`/${lang}/projects`)
+                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                        }
+                    >
                         {dictionary.projects}
                     </a>
 
-                    <a href={`/${lang}#contact`} className={getButtonClass('about')}>
+                    <a
+                        href={`/${lang}/about`}
+                        className={
+                            isActive(`/${lang}/about`)
+                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                        }
+                    >
                         {dictionary.about}
                     </a>
                 </div>
@@ -112,16 +114,27 @@ export default function Navbar({ lang, dictionary }: NavbarProps) {
                         className="overflow-hidden bg-[var(--white)] md:hidden"
                     >
                         <div className="flex flex-col items-start gap-2 pb-4 pt-2 px-4">
-                            {sections.map((section) => (
-                                <a
-                                    key={section}
-                                    href={`/${lang}#${section}`}
-                                    className={`${getButtonClass(section)} capitalize text-xl w-full text-left`}
-                                    onClick={() => setMenuOpen(false)}
-                                >
-                                    {dictionary[section] || section}
-                                </a>
-                            ))}
+                            {sections.map((section) => {
+                                const href =
+                                    section === "home"
+                                        ? `/${lang}`
+                                        : `/${lang}/${section}`;
+
+                                return (
+                                    <a
+                                        key={section}
+                                        href={href}
+                                        className={
+                                            isActive(href)
+                                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500"
+                                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                                        }
+                                        onClick={() => setMenuOpen(false)}
+                                    >
+                                        {dictionary[section] || section}
+                                    </a>
+                                );
+                            })}
                             <LanguageSwitcher currentLang={lang} languages={languages} />
                         </div>
                     </motion.div>
