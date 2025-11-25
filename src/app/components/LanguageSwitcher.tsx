@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 import { createPortal } from "react-dom";
+import { usePathname } from "next/navigation";
 
 type Language = {
   code: string;
@@ -18,6 +19,8 @@ type LanguageSwitcherProps = {
 const LanguageSwitcher = ({ currentLang, languages }: LanguageSwitcherProps) => {
   const [open, setOpen] = useState(false);
   const [coords, setCoords] = useState<{ x: number; y: number } | null>(null);
+
+  const pathname = usePathname();
 
   const current = languages.find((lang) => lang.code === currentLang);
   if (!current) return null;
@@ -56,7 +59,7 @@ const LanguageSwitcher = ({ currentLang, languages }: LanguageSwitcherProps) => 
               .map(({ code, flag, label }) => (
                 <Link
                   key={code}
-                  href={`/${code}`}
+                  href={`/${code}${pathname.replace(/^\/[a-z]{2}/, "")}`}
                   className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100"
                   onClick={() => setOpen(false)}
                 >

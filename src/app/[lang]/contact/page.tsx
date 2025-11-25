@@ -30,9 +30,9 @@ export default async function Contact({
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center lg:justify-end lg:w-full'>
+                <div className='flex justify-center lg:justify-end lg:w-full mt-12 lg:mt-0'>
                     <div className='rounded-full border-1 border-red-500'>
-                        <div className="relative w-96 h-96 lg:w-112 lg:h-112 rounded-full p-2 border-24 lg:border-60 xl:border-40 border-[var(--white)] overflow-hidden">
+                        <div className="relative w-88 h-88 lg:w-112 lg:h-112 rounded-full p-2 border-24 lg:border-60 xl:border-40 border-[var(--white)] overflow-hidden">
                             <Image
                                 src="/images/emanuel.webp"
                                 alt="Imagem da home"
