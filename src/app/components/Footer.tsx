@@ -24,8 +24,8 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                         href={`/${lang}`}
                         className={
                             isActive(`/${lang}`)
-                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
-                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                                ? "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
                         }
                     >
                         {dictionary.home}
@@ -35,8 +35,8 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                         href={`/${lang}/projects`}
                         className={
                             isActive(`/${lang}/projects`)
-                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
-                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                                ? "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
                         }
                     >
                         {dictionary.projects}
@@ -46,8 +46,8 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                         href={`/${lang}/about`}
                         className={
                             isActive(`/${lang}/about`)
-                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
-                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                                ? "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
                         }
                     >
                         {dictionary.about}
@@ -57,8 +57,8 @@ export default function Footer({ lang, dictionary }: FooterProps) {
                         href={`/${lang}/contact`}
                         className={
                             isActive(`/${lang}/contact`)
-                                ? "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
-                                : "md:px-3 md:pl-0 md:py-2 text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
+                                ? "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out text-red-500 "
+                                : "md:px-3 md:pl-0 md:py-2 text-md md:text-lg !font-bold rounded-full transition duration-300 ease-in-out bg-[var(--white)] text-gray-600 hover:text-red-500"
                         }
                     >
                         {dictionary.HeaderContact}

@@ -13,7 +13,7 @@
   "contact": "Entre em contato",
   
   "FooterRights": "2025 Todos os direitos reservados.",
-  "FooterThanks": "Feito com 💙 usando Next.js e TailwindCSS.",
+  "FooterThanks": "Feito com ❤️ usando Next.js e TailwindCSS.",
 
   "WelcomeGreeting": "Olá, sou Emanuel 👋",
   "WelcomeFunction": "Desenvolvedor Fullstack",
@@ -41,5 +41,6 @@
   "comprometimento": "Comprometimento",
   "proatividade": "Proatividade",
 
-  "workTogether": "Interessado em trabalhar juntos?"
+  "workTogether": "Interessado em trabalhar juntos?",
+  "LookingPartner": "Buscando um parceiro para trabalhar junto? Entre em contato por meio de uma das opções abaixo e vamos construir algo incrível!"
 }

@@ -7,7 +7,7 @@
   "HeaderProjects": "Proyectos",
   "HeaderContact": "Contacto",
   "FooterRights": "2025 Todos los derechos reservados.",
-  "FooterThanks": "Hecho con 💙 usando Next.js y TailwindCSS.",
+  "FooterThanks": "Hecho con ❤️ usando Next.js y TailwindCSS.",
 
   "home": "Inicio",
   "projects": "Proyectos",
@@ -40,5 +40,6 @@
   "comprometimento": "Compromiso",
   "proatividade": "Proactividad",
 
-  "workTogether": "¿Interesado en trabajar juntos?"
+  "workTogether": "¿Interesado en trabajar juntos?",
+  "LookingPartner": "¿Buscas un socio para trabajar juntos? Ponte en contacto mediante una de las opciones abajo y construyamos algo increíble juntos."
 }

@@ -41,7 +41,7 @@ export default function Navbar({ lang, dictionary }: NavbarProps) {
                         </span>
                     </a>
                 </div>
-                <div>
+                <div className='flex gap-4'>
                     <a
                         href={`/${lang}`}
                         className={
@@ -78,7 +78,7 @@ export default function Navbar({ lang, dictionary }: NavbarProps) {
 
                 <div className='flex items-center'>
                     <button className='flex justify-center items-center bg-[var(--black)] rounded-full w-8 h-8'>
-                        <a href={`/${lang}#contact`}>
+                        <a href={`/${lang}/contact`}>
                             <FaRegMessage className='text-[var(--white)]' />
                         </a>
                     </button>
