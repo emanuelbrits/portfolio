@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getDictionary } from '../lib/i18n';
 import Image from 'next/image';
 
@@ -26,12 +27,20 @@ export default async function Welcome({ lang }: NavbarProps) {
                         />
                         <p className="text-xl lg:text-2xl leading-relaxed">{dict.WelcomeText}</p>
                         <div className='pt-8 flex gap-4'>
-                            <button className='btn cursor-pointer font-bold text-md py-3 px-4 rounded-xl bg-red-500 hover:bg-red-700 text-[var(--white)] transition-all duration-200'>
-                                {dict.contact}
-                            </button>
-                            <button className='btn cursor-pointer font-bold text-md py-3 px-4 rounded-xl bg-[var(--white)] border-1 hover:bg-[var(--black)] hover:text-[var(--white)] text-[var(--black)] transition-all duration-200'>
-                                {dict.projects}
-                            </button>
+                            <Link
+                                href={`/${lang}/contact`}
+                            >
+                                <button className='btn cursor-pointer font-bold text-md py-3 px-4 rounded-xl bg-red-500 hover:bg-red-700 text-[var(--white)] transition-all duration-200'>
+                                    {dict.contact}
+                                </button>
+                            </Link>
+                            <Link
+                                href={`/${lang}/projects`}
+                            >
+                                <button className='btn cursor-pointer font-bold text-md py-3 px-4 rounded-xl bg-[var(--white)] border-1 hover:bg-[var(--black)] hover:text-[var(--white)] text-[var(--black)] transition-all duration-200'>
+                                    {dict.projects}
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className='lg:flex lg:justify-center xl:justify-end  lg:w-full'>
