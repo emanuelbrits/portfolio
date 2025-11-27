@@ -46,5 +46,10 @@
   "aboutMe": "About me",
   "aboutDescription": "Building beautiful and functional applications is my passion, always pushing myself to overcome every challenge.",
   "myStack": "My stack",
-  "whereIAm": "Where I am"
+  "whereIAm": "Where I am",
+   "myExperience": "My Experience",
+  "itSupportDev": "IT Support and Developer",
+  "ibgeInternship": "I participated in an internship at the Brazilian Institute of Geography and Statistics, performed IT support activities, and contributed to the creation of software for inventory asset management.",
+  "softwareDeveloper": "Software Developer",
+  "freelancerWork": "As a freelancer, I developed modern and functional applications, such as the landing page for Andrade Bardawil Law Firm and the lodging and reservation management system for Oikos Inn."
 }

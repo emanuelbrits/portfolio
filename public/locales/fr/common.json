@@ -46,5 +46,10 @@
   "aboutMe": "À propos de moi",
   "aboutDescription": "Créer des applications belles et fonctionnelles est ma passion, me dépassant toujours pour relever tous les défis.",
   "myStack": "Ma stack",
-  "whereIAm": "Où je me trouve"
+  "whereIAm": "Où je me trouve",
+  "myExperience": "Mon Expérience",
+  "itSupportDev": "Support Informatique et Développeur",
+  "ibgeInternship": "J'ai participé à un stage à l'Institut Brésilien de Géographie et de Statistique, où j'ai réalisé des activités de support informatique et contribué à la création d'un logiciel de gestion des biens de l’inventaire.",
+  "softwareDeveloper": "Développeur de Logiciels",
+  "freelancerWork": "En tant que freelance, j'ai développé des applications modernes et fonctionnelles, telles que la landing page du cabinet d'avocats Andrade Bardawil et le système de gestion d’hébergement et de réservations pour l’auberge Oikos."
 }

@@ -19,14 +19,13 @@ export default function MonoGlobe() {
         controls.autoRotate = true;
         controls.autoRotateSpeed = 0.5;
 
-        // animação suave para a posição inicial
         globe.pointOfView({ lat: -6, lng: -43, altitude: 1.6 }, 2000);
     }, []);
 
     return (
         <div className="bg-neutral-400 rounded-3xl">
-            <div className="relative w-full h-64 md:h-80 overflow-hidden rounded-2xl flex justify-center items-center">
-                <div className="scale-125">
+            <div className="relative w-full h-64 md:h-72 overflow-hidden rounded-2xl flex justify-center items-center">
+                <div className="scale-125 cursor-grab">
                     <Globe
                         ref={globeRef}
                         onGlobeReady={handleGlobeReady}

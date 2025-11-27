@@ -47,5 +47,10 @@
   "aboutMe": "Sobre mim",
   "aboutDescription": "Construir aplicações bonitas e funcionais é minha paixão, sempre me esforçando ao máximo para vencer todos desafios.",
   "myStack": "Minha stack",
-  "whereIAm": "Onde me encontro"
+  "whereIAm": "Onde me encontro",
+  "myExperience": "Minha experiência",
+  "itSupportDev": "Suporte de TI e Desenvolvedor",
+  "ibgeInternship": "Participei de estágio no Instituto Brasileiro de Geografia e Estatística, realizei atividades de suporte de TI e colaborei para a criação de um software para gerenciamento de bens do inventário.",
+  "softwareDeveloper": "Desenvolvedor de Software",
+  "freelancerWork": "Como freelancer desenvolvi aplicações modernas e funcionais, como a landing page para o escritório de advocacia Andrade Bardawil e o gerenciador de hospedagens e reservas para a pousada Oikos."
 }
