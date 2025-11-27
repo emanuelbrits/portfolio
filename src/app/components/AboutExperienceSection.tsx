@@ -11,11 +11,10 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
     const experienceRef = useRef<HTMLDivElement | null>(null);
     const number1divRef = useRef<HTMLDivElement | null>(null);
     const number1Ref = useRef<HTMLHeadingElement | null>(null);
-    const number2Ref = useRef<HTMLHeadingElement | null>(null);
 
     const [lineTop, setLineTop] = useState(0);
-    const [targetHeight, setTargetHeight] = useState(0);
     const heightRef = useRef(0);
+    const [renderHeight, setRenderHeight] = useState(0);
 
     useEffect(() => {
         function calculatePositions() {
@@ -23,9 +22,8 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
             const experience = experienceRef.current;
             const number1div = number1divRef.current;
             const num1 = number1Ref.current;
-            const num2 = number2Ref.current;
 
-            if (!container || !num1 || !num2 || !experience || !number1div) return;
+            if (!container || !num1 || !experience || !number1div) return;
 
             const experienceRect = experience.getBoundingClientRect();
             const number1divRect = number1div.getBoundingClientRect();
@@ -34,12 +32,12 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
             const start = experienceRect.height + 48 + num1Rect.height + 6;
             setLineTop(start);
 
-            const distanceTo02 = number1divRect.height - 48 - num1Rect.height + 90;
+            const maxDistance = number1divRect.height - 48 - num1Rect.height + 90;
 
             function handleScroll() {
                 const rect = container!.getBoundingClientRect();
                 const progress = Math.min(Math.max(1 - rect.top / (window.innerHeight * 0.6), 0), 1);
-                setTargetHeight(progress * distanceTo02);
+                heightRef.current = progress * maxDistance;
             }
 
             window.addEventListener("scroll", handleScroll);
@@ -56,11 +54,11 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
 
     useEffect(() => {
         function animate() {
-            heightRef.current += (targetHeight - heightRef.current) * 0.12;
+            setRenderHeight(prev => prev + (heightRef.current - prev) * 0.12);
             requestAnimationFrame(animate);
         }
         animate();
-    }, [targetHeight]);
+    }, []);
 
     return (
         <div ref={containerRef} className="flex flex-col relative">
@@ -73,7 +71,7 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
 
             <div
                 className="absolute left-[48px] md:left-[58px] w-[4px] bg-red-500 rounded-full"
-                style={{ top: `${lineTop}px`, height: `${heightRef.current}px` }}
+                style={{ top: `${lineTop}px`, height: `${renderHeight}px` }}
             />
 
             <div ref={number1divRef} className="flex gap-12 pl-6 pt-12">
@@ -93,10 +91,7 @@ export default function AboutExperienceSection({ dictionary }: AboutExperienceSe
             </div>
 
             <div className="flex gap-12 pl-6 pt-24">
-                <h4
-                    ref={number2Ref}
-                    className="text-5xl md:text-7xl font-bold leading-none h-12 md:h-16"
-                >
+                <h4 className="text-5xl md:text-7xl font-bold leading-none h-12 md:h-16">
                     02
                 </h4>
                 <div className="flex flex-col">
