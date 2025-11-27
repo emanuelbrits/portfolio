@@ -2,7 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function AboutExperienceSection({ dictionary }: { dictionary: any }) {
+type AboutExperienceSectionProps = {
+    dictionary: { [key: string]: string };
+};
+
+export default function AboutExperienceSection({ dictionary }: AboutExperienceSectionProps) {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const experienceRef = useRef<HTMLDivElement | null>(null);
     const number1divRef = useRef<HTMLDivElement | null>(null);
