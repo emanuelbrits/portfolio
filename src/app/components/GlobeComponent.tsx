@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useRef } from "react";
+import { useRef, useCallback } from "react";
 import type { GlobeMethods } from "react-globe.gl";
 import * as THREE from "three";
 
@@ -10,22 +10,17 @@ const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
 export default function MonoGlobe() {
     const globeRef = useRef<GlobeMethods | undefined>(undefined);
 
-    useEffect(() => {
+    const handleGlobeReady = useCallback(() => {
         const globe = globeRef.current;
         if (!globe) return;
 
         const controls = globe.controls();
-        controls.enableZoom = false;
         controls.enablePan = false;
         controls.autoRotate = true;
         controls.autoRotateSpeed = 0.5;
 
-        requestAnimationFrame(() => {
-            globe.pointOfView(
-                { lat: -6, lng: -43, altitude: 1.6 },
-                2000
-            );
-        });
+        // animação suave para a posição inicial
+        globe.pointOfView({ lat: -6, lng: -43, altitude: 1.6 }, 2000);
     }, []);
 
     return (
@@ -34,6 +29,7 @@ export default function MonoGlobe() {
                 <div className="scale-125">
                     <Globe
                         ref={globeRef}
+                        onGlobeReady={handleGlobeReady}
                         width={600}
                         height={600}
                         globeImageUrl="//unpkg.com/three-globe@2.18.3/example/img/earth-water.png"
