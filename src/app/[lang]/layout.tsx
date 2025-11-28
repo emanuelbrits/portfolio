@@ -6,12 +6,14 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default async function RootLayout(props: {
+export default function RootLayout({
+  children,
+  params,
+}: {
   children: ReactNode;
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
-  const { children, params } = props;
-  const { lang } = await params;
+  const { lang } = params;
 
   return (
     <html lang={lang} className='leading-none bg-[var(--white)]'>
