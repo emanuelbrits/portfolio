@@ -71,7 +71,7 @@ export default function ProjectsGrid({ projects }: Props) {
                   />
                 </div>
                 <div className="flex flex-col justify-start items-start text-start gap-2">
-                  <a href="" className="group">
+                  <a href={`/projects/${left.id}`} className="group">
                     <div className="flex items-center gap-4">
                       <h3 className="text-2xl lg:text-4xl font-bold transition-colors duration-300 group-hover:text-red-500">
                         {left.title}
@@ -111,7 +111,7 @@ export default function ProjectsGrid({ projects }: Props) {
                   />
                 </div>
                 <div className="flex flex-col justify-start items-start text-start gap-2">
-                  <a href="" className="group">
+                  <a href={`/projects/${right.id}`} className="group">
                     <div className="flex items-center gap-4">
                       <h3 className="text-2xl lg:text-4xl font-bold transition-colors duration-300 group-hover:text-red-500">
                         {right.title}

@@ -53,5 +53,11 @@
   "softwareDeveloper": "Software Developer",
   "freelancerWork": "As a freelancer, I developed modern and functional applications, such as the landing page for Andrade Bardawil Law Firm and the lodging and reservation management system for Oikos Inn.",
 
-  "Projects": "My Main Projects"
+  "Projects": "My Main Projects",
+  "projectYear": "Year",
+  "projectType": "Project type",
+  "freelance": "Freelance",
+  "academicProject": "Academic project",
+  "personalProject": "Personal project",
+  "professionalProject": "Professional project"
 }

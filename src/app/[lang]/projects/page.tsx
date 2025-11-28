@@ -16,9 +16,9 @@ export default async function Projects({
     const [firstWord, secondWord, thirdWord] = dictionary.Projects.split(" ");
 
     const projects = [
-        { id: "andrade", title: "Andrade Bardawil", img: "/images/redBackground3.jpg", desc: dictionary.andradebardawilDescription },
-        { id: "oikos", title: "Oikos Pousada", img: "/images/redBackground2.jpg", desc: dictionary.oikosDescription },
-        { id: "r6", title: "Marketplace Control R6", img: "/images/redBackground4.jpg", desc: dictionary.controlR6Description },
+        { id: "andrade-bardawil", title: "Andrade Bardawil", img: "/images/redBackground3.jpg", desc: dictionary.andradebardawilDescription },
+        { id: "oikos-pousada", title: "Oikos Pousada", img: "/images/redBackground2.jpg", desc: dictionary.oikosDescription },
+        { id: "r6-marketplace", title: "Marketplace Control R6", img: "/images/redBackground4.jpg", desc: dictionary.controlR6Description },
         { id: "fixit", title: "FixIt", img: "/images/redBackground1.jpg", desc: dictionary.fixitDescription },
     ];
 
@@ -48,7 +48,7 @@ export default async function Projects({
                                 />
                             </div>
                             <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col gap-4">
-                                <a href="" className="group">
+                                <a href={`/projects/${project.id}`} className="group">
                                     <div className="flex items-center gap-4">
                                         <h3 className="text-2xl lg:text-4xl font-bold transition-colors duration-300 group-hover:text-red-500">
                                             {project.title}

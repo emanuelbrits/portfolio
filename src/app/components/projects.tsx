@@ -9,10 +9,10 @@ export default async function Projects({ lang }: ProjectProps) {
   const dict = await getDictionary(lang);
 
   const projects = [
+    { id: "andrade-bardawil", title: "Andrade Bardawil", img: "/images/redBackground3.jpg", desc: dict.andradebardawilDescription },
+    { id: "oikos-pousada", title: "Oikos Pousada", img: "/images/redBackground2.jpg", desc: dict.oikosDescription },
     { id: "fixit", title: "FixIt", img: "/images/redBackground1.jpg", desc: dict.fixitDescription },
-    { id: "oikos", title: "Oikos Pousada", img: "/images/redBackground2.jpg", desc: dict.oikosDescription },
-    { id: "andrade", title: "Andrade Bardawil", img: "/images/redBackground3.jpg", desc: dict.andradebardawilDescription },
-    { id: "r6", title: "Marketplace Control R6", img: "/images/redBackground4.jpg", desc: dict.controlR6Description },
+    { id: "r6-marketplace", title: "Marketplace Control R6", img: "/images/redBackground4.jpg", desc: dict.controlR6Description },
   ];
 
   return (

@@ -54,5 +54,11 @@
   "softwareDeveloper": "Desenvolvedor de Software",
   "freelancerWork": "Como freelancer desenvolvi aplicações modernas e funcionais, como a landing page para o escritório de advocacia Andrade Bardawil e o gerenciador de hospedagens e reservas para a pousada Oikos.",
 
-  "Projects": "Meus Principais Trabalhos"
+  "Projects": "Meus Principais Trabalhos",
+  "projectYear": "Ano",
+  "projectType": "Tipo do projeto",
+  "freelance": "Freelancer",
+  "academicProject": "Projeto acadêmico",
+  "personalProject": "Projeto pessoal",
+  "professionalProject": "Projeto profissional"
 }
