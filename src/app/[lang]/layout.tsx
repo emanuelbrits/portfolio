@@ -1,10 +1,5 @@
 import { ReactNode } from 'react';
-import { i18n } from '../lib/i18n-config';
 import '../globals.css';
-
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
-}
 
 export default function RootLayout({
   children,
