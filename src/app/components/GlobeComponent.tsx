@@ -19,7 +19,7 @@ export default function MonoGlobe() {
         controls.autoRotate = true;
         controls.autoRotateSpeed = 0.5;
 
-        globe.pointOfView({ lat: -6, lng: -43, altitude: 1.6 }, 2000);
+        globe.pointOfView({ lat: -6, lng: -43, altitude: 3.6 }, 2000);
     }, []);
 
     return (

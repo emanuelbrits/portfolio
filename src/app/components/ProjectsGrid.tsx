@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { TbExternalLink } from "react-icons/tb";
 
 type Project = {
   id: string;
@@ -70,7 +71,20 @@ export default function ProjectsGrid({ projects }: Props) {
                   />
                 </div>
                 <div className="flex flex-col justify-start items-start text-start gap-2">
-                  <a href=""><h3 className="text-2xl lg:text-4xl font-bold">{left.title}</h3></a>
+                  <a href="" className="group">
+                    <div className="flex items-center gap-4">
+                      <h3 className="text-2xl lg:text-4xl font-bold transition-colors duration-300 group-hover:text-red-500">
+                        {left.title}
+                      </h3>
+
+                      <TbExternalLink
+                        className="text-red-500 text-3xl p-1 border-2 border-red-500 rounded-full 
+                        transition-all duration-300 
+                        group-hover:bg-red-500 group-hover:text-white"
+                      />
+                    </div>
+                  </a>
+
                   <p className="text-lg md:text-xl lg:text-2xl">{left.desc}</p>
                 </div>
               </div>
@@ -97,7 +111,19 @@ export default function ProjectsGrid({ projects }: Props) {
                   />
                 </div>
                 <div className="flex flex-col justify-start items-start text-start gap-2">
-                  <a href=""><h3 className="text-2xl lg:text-4xl font-bold">{right.title}</h3></a>
+                  <a href="" className="group">
+                    <div className="flex items-center gap-4">
+                      <h3 className="text-2xl lg:text-4xl font-bold transition-colors duration-300 group-hover:text-red-500">
+                        {right.title}
+                      </h3>
+
+                      <TbExternalLink
+                        className="text-red-500 text-3xl p-1 border-2 border-red-500 rounded-full 
+                        transition-all duration-300 
+                        group-hover:bg-red-500 group-hover:text-white"
+                      />
+                    </div>
+                  </a>
                   <p className="text-lg md:text-xl lg:text-2xl">{right.desc}</p>
                 </div>
               </div>
