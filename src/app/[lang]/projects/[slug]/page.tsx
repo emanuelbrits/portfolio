@@ -3,12 +3,12 @@ import Navbar from "@/app/components/Navbar";
 import { getDictionary } from "@/app/lib/i18n";
 import ProjectClient from "./ProjectClient";
 
-interface ProjectPageParams {
-    lang: string;
-}
-
-export default async function ProjectPage({ params, }: { params: ProjectPageParams; }) {
-    const { lang } = params;
+export default async function ProjectPage({
+    params,
+}: {
+    params: Promise<{ lang: string }>;
+}) {
+    const { lang } = await params;
 
     const dictionary = await getDictionary(lang);
 
