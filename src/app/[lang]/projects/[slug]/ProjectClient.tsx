@@ -12,7 +12,7 @@ interface Project {
     imgs?: string[];
 }
 
-export default function ProjectClient({ dictionary }: { dictionary: any }) {
+export default function ProjectClient({ dictionary }: { dictionary: { [key: string]: string } }) {
     const { slug } = useParams<{ slug: string }>();
 
     const projects: Record<string, Project> = {
